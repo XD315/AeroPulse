@@ -1,0 +1,69 @@
+# ==========================================
+# 1. MÔI TRƯỜNG & BẢO MẬT (QUAN TRỌNG NHẤT)
+# ==========================================
+# Tuyệt đối không đẩy các file chứa API Key, Token, mật khẩu lên GitHub
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+
+# ==========================================
+# 2. PYTHON & BACKEND (Flask/Data)
+# ==========================================
+# Thư mục môi trường ảo Python
+venv/
+env/
+.venv/
+
+# Các file rác do hệ thống Python tự sinh ra
+__pycache__/
+*.py[cod]
+*$py.class
+*.log
+
+# ==========================================
+# 3. JUPYTER NOTEBOOK (Phân tích Data)
+# ==========================================
+# Các file lưu trữ trạng thái tạm thời của Colab/Jupyter
+.ipynb_checkpoints/
+
+# ==========================================
+# 4. FRONTEND (React.js / Node.js)
+# ==========================================
+# Thư viện tải về (cực kỳ nặng, người khác tải repo về tự chạy 'npm install')
+node_modules/
+
+# Thư mục build ra sản phẩm cuối cùng
+build/
+dist/
+
+# File log lỗi của npm/yarn
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ==========================================
+# 5. DỮ LIỆU (DATA) LỚN
+# ==========================================
+# Chú ý: KHÔNG ignore thư mục 'data/' hay 'data/aqi_data.csv' 
+# vì GitHub Actions cần commit file này lên.
+# Nhưng nên chặn các file nén quá nặng nếu bạn lỡ tải về:
+*.zip
+*.tar.gz
+*.rar
+
+# Bỏ comment (dấu #) dòng dưới đây nếu file historical_aqi.csv lớn hơn 50MB
+# data/historical_aqi.csv 
+
+# ==========================================
+# 6. HỆ ĐIỀU HÀNH & IDE (Trình soạn thảo)
+# ==========================================
+# MacOS và Windows rác
+.DS_Store
+Thumbs.db
+
+# Cấu hình cá nhân của VS Code, IntelliJ
+.vscode/
+.idea/
