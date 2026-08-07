@@ -1,6 +1,9 @@
-city,aqi,timestamp
-ho-chi-minh,-,2026-08-07T09:18:31.467249
-hanoi,62,2026-08-07T09:18:32.230018
-da-nang,11,2026-08-07T09:18:32.968379
-can-tho,26,2026-08-07T09:18:33.688556
-hue,6,2026-08-07T09:18:34.412613
+location,station_name,aqi,timestamp
+hanoi,"Hanoi, Vietnam (Hà Nội)",9,2026-08-07T09:52:55.390500
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",11,2026-08-07T09:52:56.161732
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",6,2026-08-07T09:52:56.912308
+thai-nguyen,"Thái nguyên/Đường Hùng Vương - Tp Thái Nguyên, Vietnam",91,2026-08-07T09:52:57.706018
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",19,2026-08-07T09:52:58.456168
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",12,2026-08-07T09:52:59.240746
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",8,2026-08-07T09:52:59.980112
+tay-ninh,"Tây Ninh/Thị xã Tràng Bảng, Vietnam",4,2026-08-07T09:53:00.742566
