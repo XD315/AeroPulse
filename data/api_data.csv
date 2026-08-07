@@ -1,17 +1,9 @@
 location,station_name,aqi,pm25,pm10,temperature,humidity,wind,timestamp
-hanoi,"Hanoi, Vietnam (Hà Nội)",9,9,4,,,,2026-08-07T10:50:45.416188
-da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",11,11,8,,,,2026-08-07T10:50:46.161869
-hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",6,6,4,,,,2026-08-07T10:50:46.915477
-thai-nguyen,"Thái nguyên/Đường Hùng Vương - Tp Thái Nguyên, Vietnam",91,91,,,,,2026-08-07T10:50:47.663570
-quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",19,14,19,,,,2026-08-07T10:50:48.389781
-ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",12,8,12,,,,2026-08-07T10:50:49.124698
-viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",8,8,5,,,,2026-08-07T10:50:49.867817
-ho-chi-minh,"Tây Ninh/Thị xã Tràng Bảng, Vietnam",4,,4,,,,2026-08-07T10:50:50.613873
-hanoi,"Hanoi, Vietnam (Hà Nội)",9,9,4,26,94,3,2026-08-07T10:55:47.263594
-da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",11,11,8,27,88,1,2026-08-07T10:55:48.030512
-hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",6,6,4,26,88,1,2026-08-07T10:55:48.868777
-thai-nguyen,"Thái nguyên/Đường Hùng Vương - Tp Thái Nguyên, Vietnam",91,91,,26,94,3,2026-08-07T10:55:49.662553
-quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",19,14,19,26.4,91.5,1,2026-08-07T10:55:50.437812
-ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",12,8,12,28.2,72.1,1,2026-08-07T10:55:51.215199
-viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",8,8,5,26,94,2.5,2026-08-07T10:55:52.062318
-ho-chi-minh,"Tây Ninh/Thị xã Tràng Bảng, Vietnam",4,,4,28,94,3.6,2026-08-07T10:55:52.990941
+hanoi,"Hanoi, Vietnam (Hà Nội)",9,9,4,26,94,3,2026-08-07T11:00:20.226524
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",11,11,8,27,88,1,2026-08-07T11:00:21.016449
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",6,6,4,26,88,1,2026-08-07T11:00:21.768810
+thai-nguyen,"Thái nguyên/Đường Hùng Vương - Tp Thái Nguyên, Vietnam",91,91,,26,94,3,2026-08-07T11:00:22.569564
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",19,14,19,26.4,91.5,1,2026-08-07T11:00:23.290947
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",12,8,12,28.2,72.1,1,2026-08-07T11:00:24.036131
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",8,8,5,26,94,2.5,2026-08-07T11:00:24.802489
+ho-chi-minh,"Tây Ninh/Thị xã Tràng Bảng, Vietnam",4,,4,28,94,3.6,2026-08-07T11:00:25.595968
