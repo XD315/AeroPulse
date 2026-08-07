@@ -7,20 +7,25 @@ from dotenv import load_dotenv
 load_dotenv()
 TOKEN = os.getenv("WAQI_TOKEN")
 
-# Toạ độ các trạm ĐÃ XÁC NHẬN đang hoạt động (lấy từ map/bounds)
 LOCATIONS = {
     "hanoi": (21.0491, 105.8831),
     "da-nang": (16.074, 108.217),
-     "ho-chi-minh": (10.7769, 106.7009),
     "hue": (16.46226, 107.596351),
     "thai-nguyen": (21.593151, 105.8431043),
     "quang-ninh": (21.006153, 106.859097),
     "ha-tinh": (18.0145193, 106.3990682),
     "viet-tri": (21.33847, 105.3673),
-    "tay-ninh": (11.030287, 106.35631),  # gần TP.HCM nhất hiện có
+    "ho-chi-minh": (10.7769, 106.7009),  # thường xuyên thiếu dữ liệu — xem DECISIONS.md
 }
 
 CSV_FILE = "data/api_data.csv"
+
+
+def get_iaqi_value(iaqi, key):
+    value = iaqi.get(key, {})
+    if isinstance(value, dict):
+        return value.get("v", "")
+    return value
 
 
 def fetch_aqi_by_location(name, lat, lng):
@@ -32,10 +37,17 @@ def fetch_aqi_by_location(name, lat, lng):
         print(f"Lỗi với {name}: {data}")
         return None
 
+    iaqi = data["data"].get("iaqi", {})
+
     return {
         "location": name,
         "station_name": data["data"]["city"]["name"],
         "aqi": data["data"]["aqi"],
+        "pm25": get_iaqi_value(iaqi, "pm25"),
+        "pm10": get_iaqi_value(iaqi, "pm10"),
+        "temperature": get_iaqi_value(iaqi, "t"),
+        "humidity": get_iaqi_value(iaqi, "h"),
+        "wind": get_iaqi_value(iaqi, "w"),
         "timestamp": datetime.now().isoformat()
     }
 
@@ -44,7 +56,10 @@ def save_to_csv(rows):
     file_exists = os.path.exists(CSV_FILE)
     os.makedirs(os.path.dirname(CSV_FILE), exist_ok=True)
 
-    fieldnames = ["location", "station_name", "aqi", "timestamp"]
+    #fieldnames = ["location", "station_name", "aqi", "pm25", "pm10", "timestamp"]
+    # Nếu bật thời tiết, đổi thành:
+    fieldnames = ["location", "station_name", "aqi", "pm25", "pm10", "temperature", "humidity", "wind", "timestamp"]
+
     with open(CSV_FILE, mode="a", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         if not file_exists:
