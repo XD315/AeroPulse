@@ -3,6 +3,7 @@ import csv
 import os
 from datetime import datetime
 from dotenv import load_dotenv
+from math import radians, sin, cos, sqrt, atan2
 
 load_dotenv()
 TOKEN = os.getenv("WAQI_TOKEN")
@@ -28,7 +29,15 @@ def get_iaqi_value(iaqi, key):
     return value
 
 
-def fetch_aqi_by_location(name, lat, lng):
+def distance_km(lat1, lng1, lat2, lng2):
+    R = 6371  # bán kính Trái Đất (km)
+    dlat = radians(lat2 - lat1)
+    dlng = radians(lng2 - lng1)
+    a = sin(dlat/2)**2 + cos(radians(lat1)) * cos(radians(lat2)) * sin(dlng/2)**2
+    return R * 2 * atan2(sqrt(a), sqrt(1-a))
+
+
+def fetch_aqi_by_location(name, lat, lng, max_distance_km=30):
     url = f"https://api.waqi.info/feed/geo:{lat};{lng}/?token={TOKEN}"
     response = requests.get(url)
     data = response.json()
@@ -37,17 +46,24 @@ def fetch_aqi_by_location(name, lat, lng):
         print(f"Lỗi với {name}: {data}")
         return None
 
-    iaqi = data["data"].get("iaqi", {})
+    station_lat, station_lng = data["data"]["city"]["geo"]
+    dist = distance_km(lat, lng, station_lat, station_lng)
 
+    if dist > max_distance_km:
+        print(f"Bỏ qua {name}: trạm gần nhất cách {dist:.0f}km, vượt ngưỡng {max_distance_km}km")
+        return None
+
+    iaqi = data["data"].get("iaqi", {})
+    print(f"{name}: trạm cách {dist:.1f}km ({data['data']['city']['name']})")
     return {
         "location": name,
         "station_name": data["data"]["city"]["name"],
         "aqi": data["data"]["aqi"],
-        "pm25": get_iaqi_value(iaqi, "pm25"),
-        "pm10": get_iaqi_value(iaqi, "pm10"),
-        "temperature": get_iaqi_value(iaqi, "t"),
-        "humidity": get_iaqi_value(iaqi, "h"),
-        "wind": get_iaqi_value(iaqi, "w"),
+        "pm25": iaqi.get("pm25", {}).get("v", ""),
+        "pm10": iaqi.get("pm10", {}).get("v", ""),
+        "temperature": iaqi.get("t", {}).get("v", ""),
+        "humidity": iaqi.get("h", {}).get("v", ""),
+        "wind": iaqi.get("w", {}).get("v", ""),
         "timestamp": datetime.now().isoformat()
     }
 
