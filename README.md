@@ -45,7 +45,7 @@ GEMINI_API_KEY=your_gemini_api_key
 WAQI_TOKEN=your_waqi_token
 ```
 
-Không đưa các file `.env` hoặc API key lên Git. Ứng dụng có thể đọc dữ liệu hiện có từ `data/api_data.csv`; tải dữ liệu mới là bước tùy chọn.
+Không đưa các file `.env` hoặc API key lên Git. Backend tự tải bản `data/api_data.csv` mới nhất đã được commit trên nhánh `main` của GitHub; nếu GitHub không truy cập được, backend dùng file CSV trong repo làm dự phòng. Việc này không tự gọi WAQI để thu thập số liệu mới.
 
 ## Chạy ứng dụng
 
@@ -64,7 +64,9 @@ npm run dev
 
 Mở URL Vite hiển thị trong terminal. Backend mặc định chạy tại `http://localhost:5000`.
 
-Để lấy dữ liệu mới trước khi chạy ứng dụng:
+### Thu thập dữ liệu WAQI thủ công (không bắt buộc)
+
+Chỉ chạy bước này khi muốn gọi WAQI để lấy số liệu mới. Script nối dữ liệu vào `data/api_data.csv` trên máy hiện tại; nó không tự commit hoặc đẩy dữ liệu lên GitHub. Muốn backend tải các dòng mới, cần commit và push file CSV lên nhánh `main`.
 
 ```powershell
 python scripts/fetch_api.py
