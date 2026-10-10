@@ -9,6 +9,8 @@
 .env.production.local
 *.pem
 
+backend/.env
+
 # ==========================================
 # 2. PYTHON & BACKEND (Flask/Data)
 # ==========================================

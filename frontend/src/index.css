@@ -1,0 +1,370 @@
+/* ========================================
+   AEROPULSE DESIGN SYSTEM
+   Font: Inter (body + heading) — dùng bởi Linear, Vercel, Figma
+   Mono: Fira Code (brand name, tech tags)
+   Style: Glassmorphism · Dark-first
+   ======================================== */
+
+:root {
+  /* Typography
+     --font-sans : Plus Jakarta Sans — hỗ trợ Vietnamese, modern geometric
+     --font-mono : JetBrains Mono — số liệu kỹ thuật, timestamp
+  */
+  --font-sans:    'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono:    'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+  /* aliases — giữ tương thích với code cũ */
+  --font-heading: var(--font-sans);
+  --font-body:    var(--font-sans);
+
+  /* Color tokens – Light mode */
+  --color-bg:           #dbeef0;
+  --color-bg-gradient:  linear-gradient(160deg, #cce7f0 0%, #ddf0f3 60%, #c9e8ed 100%);
+  --color-surface:      rgba(255, 255, 255, 0.72);
+  --color-surface-2:    rgba(255, 255, 255, 0.55);
+  --color-border:       rgba(14, 106, 159, 0.18);
+  --color-text:         #172f52;
+  --color-text-muted:   #4b6577;
+  --color-accent:       #0977c8;
+  --color-accent-glow:  rgba(9, 119, 200, 0.25);
+  --color-warning:      #fffbeb;
+  --color-warning-border: #fbbf24;
+  --color-warning-text: #78350f;
+
+  /* Glassmorphism */
+  --glass-blur:    16px;
+  --glass-border:  1px solid rgba(255, 255, 255, 0.35);
+  --glass-shadow:  0 8px 32px rgba(29, 78, 96, 0.12);
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-2xl: 24px;
+
+  /* Spacing scale (4dp) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 28px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+
+  /* Animation */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast:   150ms;
+  --duration-normal: 250ms;
+  --duration-slow:   400ms;
+
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: var(--color-text);
+  /* Plus Jakarta Sans rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'kern', 'liga';
+}
+
+/* ---- Dark mode tokens ---- */
+.dark-theme {
+  --color-bg:           #0f1d2a;
+  --color-bg-gradient:  linear-gradient(160deg, #0d1b28 0%, #111f2e 60%, #0a1622 100%);
+  --color-surface:      rgba(23, 43, 59, 0.88);
+  --color-surface-2:    rgba(18, 34, 48, 0.80);
+  --color-border:       rgba(65, 100, 122, 0.45);
+  --color-text:         #e5eef5;
+  --color-text-muted:   #94a3b8;
+  --color-accent:       #38bdf8;
+  --color-accent-glow:  rgba(56, 189, 248, 0.2);
+  --color-warning:      #3e351f;
+  --color-warning-border: #d39b2b;
+  --color-warning-text: #ffe2a1;
+  --glass-border:  1px solid rgba(255, 255, 255, 0.08);
+  --glass-shadow:  0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+/* ---- Reset ---- */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-bg-gradient);
+  background-attachment: fixed;
+  color: var(--color-text);
+  transition: background var(--duration-slow) var(--ease-out),
+              color var(--duration-normal) var(--ease-out);
+}
+
+/* Headings — dùng Inter, font-size và weight tạo hierarchy rõ ràng */
+h1, h2, h3, h4 {
+  font-family: var(--font-sans);
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+}
+
+button, input, select {
+  font-family: var(--font-sans);
+  transition: background-color var(--duration-fast) ease,
+              color var(--duration-fast) ease,
+              border-color var(--duration-fast) ease,
+              box-shadow var(--duration-fast) ease;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* ---- App shell ---- */
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---- Dark mode: component overrides ---- */
+.app-shell.dark-theme .topbar {
+  background: linear-gradient(180deg, rgba(19, 59, 85, 0.95) 0%, rgba(14, 47, 69, 0.95) 100%);
+  border-color: rgba(40, 89, 119, 0.6);
+}
+
+.app-shell.dark-theme .brand-text,
+.app-shell.dark-theme .nav-button,
+.app-shell.dark-theme .lang-switch,
+.app-shell.dark-theme .icon-button {
+  color: #d6ecf8;
+}
+
+.app-shell.dark-theme .filter-section,
+.app-shell.dark-theme .chart-section,
+.app-shell.dark-theme .aqi-card,
+.app-shell.dark-theme .about-intro,
+.app-shell.dark-theme .about-section {
+  background: var(--color-surface);
+  border-color: var(--color-border);
+  color: var(--color-text);
+}
+
+.app-shell.dark-theme .input-group select,
+.app-shell.dark-theme .input-group input {
+  background: #102332;
+  border-color: #41647a;
+  color: #e5eef5;
+}
+
+.app-shell.dark-theme .chart-title h3,
+.app-shell.dark-theme .section-title,
+.app-shell.dark-theme .about-page h1,
+.app-shell.dark-theme .about-page h2 {
+  color: #d9effb;
+}
+
+.app-shell.dark-theme .chart-title p,
+.app-shell.dark-theme .y-axis,
+.app-shell.dark-theme .x-axis,
+.app-shell.dark-theme .about-page p,
+.app-shell.dark-theme .card-desc,
+.app-shell.dark-theme .location-info p {
+  color: var(--color-text-muted);
+}
+
+.app-shell.dark-theme .grid-line {
+  background-color: #294252;
+}
+
+.app-shell.dark-theme .chart-type-pills button,
+.app-shell.dark-theme .view-toggle button,
+.app-shell.dark-theme .card-desc,
+.app-shell.dark-theme .location-info p,
+.app-shell.dark-theme .btn-detail,
+.app-shell.dark-theme .ai-disclaimer {
+  color: var(--color-text-muted);
+}
+
+.app-shell.dark-theme .badge.danger,
+.app-shell.dark-theme .badge.success,
+.app-shell.dark-theme .badge.warning {
+  color: #f2f8fb;
+}
+
+.app-shell.dark-theme .ai-header {
+  color: #78c2ee;
+}
+
+.app-shell.dark-theme .about-alert {
+  background: var(--color-warning);
+  border-color: var(--color-warning-border);
+}
+
+.app-shell.dark-theme .about-alert h2 {
+  color: var(--color-warning-text);
+}
+
+.app-shell.dark-theme .about-alert p {
+  color: #f0dfb8;
+}
+
+/* ---- Scroll-reveal keyframe (used by About page) ---- */
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-item {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  margin: 0;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+body {
+  background: linear-gradient(180deg, #cceaf0 0%, #dfeff1 100%);
+  color: #1b1b1b;
+}
+
+body,
+button,
+input,
+select {
+  transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease;
+}
+
+button {
+  font: inherit;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #dfeef0;
+}
+
+.app-shell.dark-theme {
+  background: #0f1d2a;
+  color: #e5eef5;
+  --bg-app: #0f1d2a;
+  --bg-white: #172b3b;
+  --text-main: #e5eef5;
+  --text-muted: #b4c7d4;
+  --border-color: #31546b;
+  --danger-bg: #542f38;
+  --success-bg: #1f4b43;
+  --warning-bg: #594723;
+}
+
+.app-shell.dark-theme .topbar {
+  background: linear-gradient(180deg, #173b55 0%, #142f45 100%);
+  border-color: #285977;
+}
+
+.app-shell.dark-theme .brand-text,
+.app-shell.dark-theme .nav-button,
+.app-shell.dark-theme .lang-switch,
+.app-shell.dark-theme .icon-button {
+  color: #d6ecf8;
+}
+
+.app-shell.dark-theme .main-content,
+.app-shell.dark-theme .about-page {
+  color: #e5eef5;
+}
+
+.app-shell.dark-theme .filter-section,
+.app-shell.dark-theme .chart-section,
+.app-shell.dark-theme .aqi-card,
+.app-shell.dark-theme .about-intro,
+.app-shell.dark-theme .about-section {
+  background-color: #172b3b;
+  border-color: #31546b;
+  color: #e5eef5;
+}
+
+.app-shell.dark-theme .input-group select,
+.app-shell.dark-theme .input-group input {
+  background: #102332;
+  border-color: #41647a;
+  color: #e5eef5;
+}
+
+.app-shell.dark-theme .chart-title h3,
+.app-shell.dark-theme .section-title,
+.app-shell.dark-theme .about-page h1,
+.app-shell.dark-theme .about-page h2 {
+  color: #d9effb;
+}
+
+.app-shell.dark-theme .chart-title p,
+.app-shell.dark-theme .y-axis,
+.app-shell.dark-theme .x-axis,
+.app-shell.dark-theme .about-page p,
+.app-shell.dark-theme .card-desc,
+.app-shell.dark-theme .location-info p {
+  color: #b4c7d4;
+}
+
+.app-shell.dark-theme .grid-line {
+  background-color: #294252;
+}
+
+.app-shell.dark-theme .chart-type-pills button,
+.app-shell.dark-theme .view-toggle button,
+.app-shell.dark-theme .card-desc,
+.app-shell.dark-theme .location-info p,
+.app-shell.dark-theme .btn-detail,
+.app-shell.dark-theme .ai-disclaimer {
+  color: #b4c7d4;
+}
+
+.app-shell.dark-theme .badge.danger,
+.app-shell.dark-theme .badge.success,
+.app-shell.dark-theme .badge.warning {
+  color: #f2f8fb;
+}
+
+.app-shell.dark-theme .ai-header {
+  color: #78c2ee;
+}
+
+.app-shell.dark-theme .about-alert {
+  background: #3e351f;
+  border-color: #d39b2b;
+}
+
+.app-shell.dark-theme .about-alert h2 {
+  color: #ffe2a1;
+}
+
+.app-shell.dark-theme .about-alert p {
+  color: #f0dfb8;
+}
+

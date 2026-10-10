@@ -1,0 +1,24 @@
+.footer {
+  margin-top: auto;
+  height: 52px;
+  border-top: 1px solid rgba(12, 71, 90, 0.18);
+  background: rgba(10, 18, 25, 0.88);
+  color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 18px;
+  font-size: 0.82rem;
+}
+
+.footer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-brand .mini-icon {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
