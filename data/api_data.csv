@@ -1,12 +1,4 @@
 location,station_name,aqi,pm25,pm10,temperature,humidity,wind,timestamp
-hanoi,"Hanoi, Vietnam (Hà Nội)",9,9,4,26,94,3,2026-08-07T11:03:33.704403
-da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",11,11,8,27,88,1,2026-08-07T11:03:34.535780
-hue,"Da Nang, Vietnam (TP Đà Nẵng)",11,11,8,27,88,1,2026-08-07T11:03:35.362715
-thai-nguyen,"Thái nguyên/Đường Hùng Vương - Tp Thái Nguyên, Vietnam",91,91,,26,94,3,2026-08-07T11:03:36.130429
-quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",19,14,19,26.4,91.5,1,2026-08-07T11:03:36.916983
-ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",12,8,12,28.2,72.1,1,2026-08-07T11:03:37.757355
-viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",8,8,5,26,94,2.5,2026-08-07T11:03:38.574998
-ho-chi-minh,"Tây Ninh/Thị xã Tràng Bảng, Vietnam",4,,4,28,94,3.6,2026-08-07T11:03:39.406071
 hanoi,"Hanoi, Vietnam (Hà Nội)",9,9,4,26,94,3,2026-08-07T04:14:49.098986
 da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",11,11,8,27,88,1,2026-08-07T04:14:49.754128
 hue,"Da Nang, Vietnam (TP Đà Nẵng)",11,11,8,27,88,1,2026-08-07T04:14:50.405465
@@ -47,6 +39,14 @@ quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",47,35,47,28.8,85.9,1,2026-0
 ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",18,12,18,28.4,85.3,2,2026-08-07T10:42:12.918864
 viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",10,10,7,31,79,4.8,2026-08-07T10:42:13.417603
 ho-chi-minh,"Tây Ninh/Thị xã Tràng Bảng, Vietnam",4,,4,32,64,7.2,2026-08-07T10:42:13.932930
+hanoi,"Hanoi, Vietnam (Hà Nội)",9,9,4,26,94,3,2026-08-07T11:03:33.704403
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",11,11,8,27,88,1,2026-08-07T11:03:34.535780
+hue,"Da Nang, Vietnam (TP Đà Nẵng)",11,11,8,27,88,1,2026-08-07T11:03:35.362715
+thai-nguyen,"Thái nguyên/Đường Hùng Vương - Tp Thái Nguyên, Vietnam",91,91,,26,94,3,2026-08-07T11:03:36.130429
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",19,14,19,26.4,91.5,1,2026-08-07T11:03:36.916983
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",12,8,12,28.2,72.1,1,2026-08-07T11:03:37.757355
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",8,8,5,26,94,2.5,2026-08-07T11:03:38.574998
+ho-chi-minh,"Tây Ninh/Thị xã Tràng Bảng, Vietnam",4,,4,28,94,3.6,2026-08-07T11:03:39.406071
 hanoi,"Hanoi, Vietnam (Hà Nội)",7,7,5,30,79,5.1,2026-08-07T11:38:05.314944
 da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",11,11,10,31,70,1.5,2026-08-07T11:38:05.869855
 hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",6,6,6,32,57,2,2026-08-07T11:38:06.425874
@@ -2864,9 +2864,1123 @@ hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",39,39,26,26.5,83,1,2026-09-0
 quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",11,11,11,26.8,84.2,3,2026-09-04T00:55:38.328567
 ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",76,76,57,25.9,89.3,1,2026-09-04T00:55:38.826302
 viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",30,30,20,26.5,85.5,1.5,2026-09-04T00:55:39.324385
+hanoi,"Hanoi, Vietnam (Hà Nội)",13,13,4,33,50.5,2.5,2026-09-04T05:36:39.034372
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",22,22,15,35,49.5,2,2026-09-04T05:36:39.447896
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",14,14,11,36,42.5,2.5,2026-09-04T05:36:39.860020
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",10,10,9,31.1,56,2,2026-09-04T05:36:40.686728
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",58,56,58,33.7,52.1,3,2026-09-04T05:36:41.095196
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",16,16,10,33,50.5,2.5,2026-09-04T05:36:41.504862
+hanoi,"Hanoi, Vietnam (Hà Nội)",9,9,6,32,57,3.6,2026-09-04T10:46:00.075577
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",21,21,16,33,55.5,3,2026-09-04T10:46:00.707688
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",15,15,11,32,62.5,3.3,2026-09-04T10:46:01.338714
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",10,10,9,30.1,56.1,4,2026-09-04T10:46:02.613703
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",51,51,41,25,92,3,2026-09-04T10:46:03.247237
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",15,15,9,32,57,3.6,2026-09-04T10:46:03.879651
+hanoi,"Hanoi, Vietnam (Hà Nội)",15,15,6,30,66,2.5,2026-09-04T14:50:12.774945
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",44,44,29,28,91,1.2,2026-09-04T14:50:13.377241
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",23,23,18,29,70,2.8,2026-09-04T14:50:13.981592
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",31,31,25,30.1,56.1,4,2026-09-04T14:50:15.186400
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",59,59,57,25,92,3,2026-09-04T14:50:15.790186
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",34,34,22,30,66,2.5,2026-09-04T14:50:16.392525
+hanoi,"Hanoi, Vietnam (Hà Nội)",15,15,6,27.5,76,2,2026-09-04T18:09:36.375896
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",43,43,29,27,88,1.5,2026-09-04T18:09:37.053989
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",16,16,11,27.5,80.5,1.5,2026-09-04T18:09:37.717836
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",8,8,7,27.7,66.5,3,2026-09-04T18:09:39.043618
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",45,44,45,25,92,3,2026-09-04T18:09:39.706867
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",30,30,19,28,74,1.5,2026-09-04T18:09:40.367815
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",109,109,,28,76,2,2026-09-04T21:16:58.339998
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",38,38,25,26.5,94,1.2,2026-09-04T21:16:59.040228
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",15,15,10,26,88,0.5,2026-09-04T21:16:59.699055
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",4,4,3,27.7,66.5,3,2026-09-04T21:17:01.002974
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",49,49,41,25.2,89.8,3,2026-09-04T21:17:01.664560
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",19,19,12,27,78,2,2026-09-04T21:17:02.362279
+hanoi,"Hanoi, Vietnam (Hà Nội)",9,9,6,27,78,2,2026-09-04T23:46:19.369165
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",43,43,29,27,88,0.7,2026-09-04T23:46:19.812143
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",14,14,9,26.5,80.5,1.2,2026-09-04T23:46:20.254970
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",4,4,3,25.3,79.5,3,2026-09-04T23:46:21.144637
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",66,66,49,25.2,89.8,3,2026-09-04T23:46:21.588536
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",18,18,11,27,78,2,2026-09-04T23:46:22.033087
+hanoi,"Hanoi, Vietnam (Hà Nội)",14,14,6,28.5,67,3,2026-09-05T03:18:57.955971
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",32,32,23,32,60.5,0.7,2026-09-05T03:18:58.561750
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",14,14,10,31.5,56.5,1.2,2026-09-05T03:18:59.173088
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",4,4,3,25.3,79.5,3,2026-09-05T03:19:00.479060
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",58,58,48,26.3,83.1,1,2026-09-05T03:19:01.197580
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",22,22,14,28.5,67,3,2026-09-05T03:19:01.799580
+hanoi,"Hanoi, Vietnam (Hà Nội)",11,11,5,31,62,2.3,2026-09-05T08:07:16.205909
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",20,20,16,28,86.5,4.6,2026-09-05T08:07:16.626563
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",14,14,10,26.5,88,3.8,2026-09-05T08:07:17.042996
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",3,3,2,25.3,79.5,3,2026-09-05T08:07:17.883030
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",25,23,25,28.3,80.9,1,2026-09-05T08:07:18.439944
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",13,13,8,30.5,64,2.3,2026-09-05T08:07:18.858790
+hanoi,"Hanoi, Vietnam (Hà Nội)",11,11,5,28,74,2.5,2026-09-05T12:26:31.771591
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",21,21,14,27,91,1.2,2026-09-05T12:26:32.235975
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",9,9,6,26.5,88.5,2,2026-09-05T12:26:32.692564
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",22,22,17,25.3,79.5,3,2026-09-05T12:26:33.609221
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",25,20,25,28.3,80.9,1,2026-09-05T12:26:34.068871
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",24,24,15,28,74,2.5,2026-09-05T12:26:34.529543
+hanoi,"Hanoi, Vietnam (Hà Nội)",9,9,5,27,80.5,2.3,2026-09-05T15:49:42.312670
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",27,27,18,26,94,2,2026-09-05T15:49:42.965467
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",10,10,7,27,83,1.5,2026-09-05T15:49:43.617055
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",8,8,7,26.5,85.7,2,2026-09-05T15:49:44.926110
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",34,27,34,28,84.3,1,2026-09-05T15:49:45.599850
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",11,11,7,27,80.5,2.3,2026-09-05T15:49:46.253592
+hanoi,"Hanoi, Vietnam (Hà Nội)",11,11,5,27,78,1.8,2026-09-05T17:57:38.742576
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",38,38,26,26,94,1,2026-09-05T17:57:39.402800
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",10,10,7,26,88,0.7,2026-09-05T17:57:40.060726
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",5,5,4,26.1,76.3,3,2026-09-05T17:57:41.381941
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",25,25,25,28,84.3,1,2026-09-05T17:57:42.033274
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",9,9,6,27,78,1.8,2026-09-05T17:57:42.688208
+hanoi,"Hanoi, Vietnam (Hà Nội)",7,11,7,27,78,2,2026-09-05T20:14:00.846753
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",39,39,26,26,94,1,2026-09-05T20:14:01.260223
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",9,9,6,26,88,0.7,2026-09-05T20:14:01.671864
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",3,3,3,26.1,76.3,3,2026-09-05T20:14:02.493538
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",33,33,29,28,84.3,1,2026-09-05T20:14:02.904388
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",7,7,5,27,74,2.5,2026-09-05T20:14:03.315289
+hanoi,"Hanoi, Vietnam (Hà Nội)",7,7,4,27,76,1.8,2026-09-05T22:40:38.883482
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",43,43,29,26,94,0.5,2026-09-05T22:40:39.331440
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",10,10,7,26,88,1,2026-09-05T22:40:39.774455
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",9,9,6,25.3,80.5,1,2026-09-05T22:40:40.677244
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",36,36,31,26.2,88.2,1,2026-09-05T22:40:41.133680
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",8,8,6,27,78,2,2026-09-05T22:40:41.592683
+hanoi,"Hanoi, Vietnam (Hà Nội)",10,10,5,27,78,1.5,2026-09-06T00:37:50.765641
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",37,37,25,27,88,1.5,2026-09-06T00:37:51.319865
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",12,12,8,26,91,1,2026-09-06T00:37:51.873656
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",6,6,5,25.3,80.5,1,2026-09-06T00:37:52.988959
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",33,33,27,26.2,88.2,1,2026-09-06T00:37:53.542623
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",8,8,5,27,78,1.8,2026-09-06T00:37:54.095870
+hanoi,"Hanoi, Vietnam (Hà Nội)",9,9,2,31,60,3.8,2026-09-06T05:34:09.567943
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",18,18,12,32,66,4.8,2026-09-06T05:34:10.202428
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",11,11,8,31.5,62.5,2.8,2026-09-06T05:34:10.833544
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",7,7,7,25.3,80.5,1,2026-09-06T05:34:12.099806
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",31,31,22,30.4,70.8,4,2026-09-06T05:34:12.731193
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",8,8,5,32,59,3.6,2026-09-06T05:34:13.364053
+hanoi,"Hanoi, Vietnam (Hà Nội)",8,8,4,33,53.5,2.5,2026-09-06T10:24:16.926776
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",15,15,10,30,72,1.2,2026-09-06T10:24:17.582612
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",15,15,10,27.5,78.5,3.3,2026-09-06T10:24:18.282391
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",15,12,15,29.8,64.6,1,2026-09-06T10:24:19.647386
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",32,32,29,29.6,77.3,3,2026-09-06T10:24:20.318846
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",6,6,3,33,53.5,2.5,2026-09-06T10:24:20.971943
+hanoi,"Hanoi, Vietnam (Hà Nội)",8,8,4,30,66,1,2026-09-06T13:58:13.830914
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",28,28,19,28,80.5,1.8,2026-09-06T13:58:14.483331
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",10,10,7,24,94,2,2026-09-06T13:58:15.138608
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",30,30,29,27.4,78.4,2,2026-09-06T13:58:16.442539
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",50,43,50,27.4,81.7,1,2026-09-06T13:58:17.094854
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",17,17,12,30,64,1.2,2026-09-06T13:58:17.745547
+hanoi,"Hanoi, Vietnam (Hà Nội)",8,8,4,29,74,4.1,2026-09-06T16:52:18.614451
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",29,29,19,27,94,2,2026-09-06T16:52:19.066681
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",7,7,5,26,88,1,2026-09-06T16:52:19.518575
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",18,17,18,27.4,78.4,2,2026-09-06T16:52:20.456894
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",32,29,32,27.4,81.7,1,2026-09-06T16:52:20.908487
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",24,24,15,28,78,3,2026-09-06T16:52:21.370683
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",106,106,,28,83,2.3,2026-09-06T18:53:19.850456
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",22,22,15,27,94,0.2,2026-09-06T18:53:20.453200
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",8,8,5,26,88,0.5,2026-09-06T18:53:21.055591
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",15,14,15,27.4,78.4,2,2026-09-06T18:53:22.261329
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",31,27,31,27.4,81.7,1,2026-09-06T18:53:22.864544
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",22,22,14,27,83,2.3,2026-09-06T18:53:23.468425
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",105,105,,29,81.5,1.5,2026-09-06T21:05:27.480715
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",21,21,14,26,97,0.2,2026-09-06T21:05:28.047582
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",7,7,5,26,88,1.5,2026-09-06T21:05:28.492652
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",15,14,15,27.4,78.4,2,2026-09-06T21:05:29.420813
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",33,33,32,26.5,86.2,1,2026-09-06T21:05:29.867744
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",23,23,15,26,88,1.5,2026-09-06T21:05:30.385815
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",153,153,,27,91,2,2026-09-06T23:32:24.351049
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",25,25,17,26,94,0.5,2026-09-06T23:32:24.983241
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",11,11,7,26,88,1.2,2026-09-06T23:32:25.616039
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",22,22,20,27.4,78.4,2,2026-09-06T23:32:26.921987
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",42,40,42,26.5,86.2,1,2026-09-06T23:32:27.555814
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",21,21,14,26,94,2,2026-09-06T23:32:28.217332
+hanoi,"Hanoi, Vietnam (Hà Nội)",7,7,4,29.5,72,2.3,2026-09-07T03:17:14.139240
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",18,18,12,29.5,76.5,0.2,2026-09-07T03:17:14.828073
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",13,13,9,29.5,72,1.5,2026-09-07T03:17:15.479517
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",29,29,28,25,93.1,2,2026-09-07T03:17:16.828523
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",29,26,29,26.6,87.2,1,2026-09-07T03:17:17.535160
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",29,29,18,29.5,72,2.3,2026-09-07T03:17:18.192094
+hanoi,"Hanoi, Vietnam (Hà Nội)",9,9,5,35,49,1.5,2026-09-07T09:00:00.875599
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",16,16,11,30,74.5,5.1,2026-09-07T09:00:02.170133
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",7,7,5,26.5,85.5,3.3,2026-09-07T09:00:03.791749
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",20,19,20,30.2,68.7,2,2026-09-07T09:00:06.041100
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",6,6,5,26.6,87.2,1,2026-09-07T09:00:06.734855
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",22,22,14,34.5,50.5,1.8,2026-09-07T09:00:07.478084
+hanoi,"Hanoi, Vietnam (Hà Nội)",12,12,5,29,79,4.1,2026-09-07T15:00:55.479414
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",19,19,13,27,94,1,2026-09-07T15:00:56.132839
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",10,10,7,27,88,1.5,2026-09-07T15:00:56.788147
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",23,23,23,30.4,69.5,1,2026-09-07T15:00:58.116272
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",7,7,7,28.7,80.9,1,2026-09-07T15:00:58.769641
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",57,57,35,29,79,4.1,2026-09-07T15:00:59.434885
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",141,141,,30,82,1,2026-09-07T19:37:49.702141
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",17,17,11,26.5,94,0.2,2026-09-07T19:37:50.263924
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",9,9,6,26.5,91,0.2,2026-09-07T19:37:50.825041
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",31,31,28,30.4,69.5,1,2026-09-07T19:37:51.933890
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",7,6,7,27.5,89.4,1,2026-09-07T19:37:52.491922
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",42,42,28,28,85.5,1.8,2026-09-07T19:37:53.082625
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",156,156,,28,91,2.3,2026-09-07T22:33:56.990228
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",17,17,12,26,94,0.7,2026-09-07T22:33:57.448522
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",10,10,7,26,94,1,2026-09-07T22:33:57.905831
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",32,32,27,30.4,69.5,1,2026-09-07T22:33:58.840115
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",6,6,6,26.5,92.6,1,2026-09-07T22:33:59.299185
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",30,30,20,27,94,2.3,2026-09-07T22:33:59.756843
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",173,173,,28,93,1.5,2026-09-08T00:56:46.925870
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",21,21,14,26,94,0.5,2026-09-08T00:56:47.917651
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",10,10,7,26,91,1,2026-09-08T00:56:48.908379
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",33,33,27,30.4,69.5,1,2026-09-08T00:56:50.873214
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",7,6,7,26.5,92.6,1,2026-09-08T00:56:51.855521
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",29,29,19,26.5,97,1.5,2026-09-08T00:56:52.838599
+hanoi,"Hanoi, Vietnam (Hà Nội)",11,11,3,35,56,1.5,2026-09-08T05:44:47.640764
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",16,16,12,30,74,4.6,2026-09-08T05:44:48.210170
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",8,8,6,30,76.5,3.3,2026-09-08T05:44:48.775275
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",33,33,29,31.1,68.8,3,2026-09-08T05:44:49.912575
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",4,3,4,27,91.5,1,2026-09-08T05:44:50.466452
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",26,26,16,35,56,1.5,2026-09-08T05:44:51.019536
+hanoi,"Hanoi, Vietnam (Hà Nội)",6,6,2,34.5,54.5,1.5,2026-09-08T10:44:12.556833
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",7,7,5,27.5,85.5,0.7,2026-09-08T10:44:13.052224
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",7,7,5,27,85.5,1.8,2026-09-08T10:44:13.507833
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",34,31,34,31.6,67.7,2,2026-09-08T10:44:14.425699
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",4,4,3,27.6,88.9,1,2026-09-08T10:44:14.906748
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",19,19,11,34,52,2,2026-09-08T10:44:15.401445
+hanoi,"Hanoi, Vietnam (Hà Nội)",11,11,2,30,79,2,2026-09-08T14:56:06.402648
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",15,15,10,26,94,1,2026-09-08T14:56:06.861263
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",5,5,4,28,76,2,2026-09-08T14:56:07.318399
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",48,48,42,31.6,67.7,2,2026-09-08T14:56:08.235439
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",9,8,9,27.6,88.9,1,2026-09-08T14:56:08.697605
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",40,40,24,30,79,3,2026-09-08T14:56:09.156410
+hanoi,"Hanoi, Vietnam (Hà Nội)",11,11,2,30,74,1.8,2026-09-08T18:23:43.355932
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",20,20,13,26,94,0.7,2026-09-08T18:23:43.904986
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",4,4,3,26,88,1.5,2026-09-08T18:23:44.453505
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",31,31,29,31.6,67.7,2,2026-09-08T18:23:45.560682
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",8,7,8,27,91.5,1,2026-09-08T18:23:46.118013
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",28,28,16,30,74,1.8,2026-09-08T18:23:46.668324
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",134,134,,29,85,1.5,2026-09-08T21:36:57.052118
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",28,28,19,26,94,0.2,2026-09-08T21:36:57.607989
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",4,4,3,26,88,0.5,2026-09-08T21:36:58.164695
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",27,27,24,31.6,67.7,2,2026-09-08T21:36:59.272121
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",6,6,6,27,91.5,1,2026-09-08T21:36:59.827080
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",15,15,9,29,83,1.5,2026-09-08T21:37:00.380530
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",175,175,,29,88,1.5,2026-09-08T23:52:29.744323
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",43,43,29,26,94,1,2026-09-08T23:52:30.394594
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",5,5,4,26,91,1,2026-09-08T23:52:31.054295
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",23,23,21,31.6,67.7,2,2026-09-08T23:52:32.367094
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",8,8,7,25.6,93.1,1,2026-09-08T23:52:33.022534
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",14,14,10,28,88,2,2026-09-08T23:52:33.675889
+hanoi,"Hanoi, Vietnam (Hà Nội)",4,4,2,32.5,66,1.5,2026-09-09T03:28:07.304942
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",23,23,16,31.5,66,2.5,2026-09-09T03:28:07.955720
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",8,8,7,31,64,2.3,2026-09-09T03:28:08.607394
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",33,33,29,27.4,90.5,2,2026-09-09T03:28:09.911429
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",5,5,5,25.6,93.1,1,2026-09-09T03:28:10.570550
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",36,36,23,32.5,66,1.5,2026-09-09T03:28:11.220638
+hanoi,"Hanoi, Vietnam (Hà Nội)",4,4,2,34.5,57.5,2,2026-09-09T08:43:09.446417
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",6,6,4,31,74,6.9,2026-09-09T08:43:10.079320
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",9,9,7,30,72,2.8,2026-09-09T08:43:10.713543
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",28,25,28,34,58.1,1,2026-09-09T08:43:11.975053
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",5,5,5,31.8,69.8,2,2026-09-09T08:43:12.607250
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",27,27,17,34.5,57.5,2,2026-09-09T08:43:13.240886
+hanoi,"Hanoi, Vietnam (Hà Nội)",10,10,6,27,88,2,2026-09-09T13:28:41.201962
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",15,15,10,27,88,2.3,2026-09-09T13:28:41.657268
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",11,11,8,27.5,85.5,1.5,2026-09-09T13:28:42.109709
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",30,28,30,34,58.1,1,2026-09-09T13:28:43.026073
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",9,9,6,31.8,69.8,2,2026-09-09T13:28:43.479832
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",14,14,9,27,88,1,2026-09-09T13:28:43.933207
+hanoi,"Hanoi, Vietnam (Hà Nội)",10,10,6,27,88,0.5,2026-09-09T17:37:28.316164
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",31,31,21,25,91,2.3,2026-09-09T17:37:28.914071
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",9,9,6,26,88,1.5,2026-09-09T17:37:29.512177
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",21,21,21,34,58.1,1,2026-09-09T17:37:30.710828
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",4,4,3,31.8,69.8,2,2026-09-09T17:37:31.308493
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",15,15,10,27,88,0.5,2026-09-09T17:37:31.906058
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",164,164,,27,94,1.5,2026-09-09T20:33:23.846630
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",31,31,21,26,94,0.5,2026-09-09T20:33:24.498203
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",7,7,5,26,88,1,2026-09-09T20:33:25.152681
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",21,19,21,32.8,70.8,1,2026-09-09T20:33:26.465520
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",5,5,4,24.6,93,2,2026-09-09T20:33:27.129345
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",17,17,12,27,88,0.5,2026-09-09T20:33:27.783026
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",168,168,,26,97,1.5,2026-09-09T22:58:51.637179
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",23,23,16,26,94,1,2026-09-09T22:58:52.191501
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",10,10,7,26,88,1,2026-09-09T22:58:52.744722
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",21,21,20,32.8,70.8,1,2026-09-09T22:58:53.842140
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",5,5,5,24.6,93,2,2026-09-09T22:58:54.393127
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",13,13,9,26,94,1.5,2026-09-09T22:58:54.943068
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",134,134,,26,95,1.2,2026-09-10T00:58:55.734038
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",26,26,18,26,94,1.8,2026-09-10T00:58:56.192227
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",12,12,8,24,88,1.8,2026-09-10T00:58:56.654555
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",20,20,20,32.8,70.8,1,2026-09-10T00:58:57.574465
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",6,6,6,24.6,93,2,2026-09-10T00:58:58.036515
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",9,9,6,26,88,2,2026-09-10T00:58:58.499328
+hanoi,"Hanoi, Vietnam (Hà Nội)",7,7,6,29.5,76.5,3.6,2026-09-10T05:49:13.167432
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",9,9,7,30.5,68,4.1,2026-09-10T05:49:13.766479
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",10,10,7,29,70,2.3,2026-09-10T05:49:14.328008
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",23,23,22,31.2,66.8,2,2026-09-10T05:49:15.446853
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",4,4,3,27.5,84.2,1,2026-09-10T05:49:15.999884
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",8,8,5,29.5,76.5,3.6,2026-09-10T05:49:16.558535
+hanoi,"Hanoi, Vietnam (Hà Nội)",5,8,5,23.5,97,2.3,2026-09-10T10:47:10.582343
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",11,11,8,29.5,72,4.1,2026-09-10T10:47:11.240554
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",9,9,7,25.5,85.5,3.3,2026-09-10T10:47:11.897949
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",25,24,25,30.8,61.7,2,2026-09-10T10:47:13.214529
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",5,5,4,27.6,82.3,2,2026-09-10T10:47:13.870675
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",15,15,9,23.5,97,2.3,2026-09-10T10:47:14.549851
+hanoi,"Hanoi, Vietnam (Hà Nội)",9,9,5,24,97,1.8,2026-09-10T14:53:07.302341
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",16,16,11,25.5,91,1.2,2026-09-10T14:53:07.954550
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",27,27,18,26.5,91,1.2,2026-09-10T14:53:08.607332
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",17,17,15,26.5,86.2,3,2026-09-10T14:53:09.920363
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",4,4,3,24.8,83.4,2,2026-09-10T14:53:10.572369
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",10,10,7,24,97,1.8,2026-09-10T14:53:11.223953
+hanoi,"Hanoi, Vietnam (Hà Nội)",9,9,5,25,94,2,2026-09-10T18:09:49.162487
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",17,17,11,26,94,2.5,2026-09-10T18:09:49.769439
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",14,14,9,25,85.5,1.2,2026-09-10T18:09:50.373660
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",16,16,14,26.5,86.2,3,2026-09-10T18:09:51.584177
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",3,3,2,24.8,83.4,2,2026-09-10T18:09:52.191261
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",10,10,6,25,94,2,2026-09-10T18:09:52.814645
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",136,136,,24,97,1.2,2026-09-10T21:26:56.885770
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",21,21,14,25,94,1,2026-09-10T21:26:57.384325
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",7,7,4,25,94,1.5,2026-09-10T21:26:57.883821
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",16,16,16,25.4,89.2,3,2026-09-10T21:26:58.881691
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",3,3,3,24.2,94.7,1,2026-09-10T21:26:59.413828
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",8,8,5,24.5,97,1.2,2026-09-10T21:26:59.913880
+hanoi,"Hanoi, Vietnam (Hà Nội)",12,12,5,24,100,1.2,2026-09-10T23:46:41.598035
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",21,21,14,25,94,1,2026-09-10T23:46:42.280997
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",7,7,5,25,88,2,2026-09-10T23:46:42.933613
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",17,17,16,25.4,89.2,3,2026-09-10T23:46:44.242101
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",3,3,3,24.2,94.7,1,2026-09-10T23:46:44.901933
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",8,8,5,24,100,1.2,2026-09-10T23:46:45.554048
+hanoi,"Hanoi, Vietnam (Hà Nội)",12,12,5,28.5,74,4.3,2026-09-11T03:23:04.404000
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",10,10,7,29.5,76.5,2.8,2026-09-11T03:23:04.849615
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",9,9,6,25.5,91,2.8,2026-09-11T03:23:05.293499
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",18,18,17,24,89.7,3,2026-09-11T03:23:06.181048
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",5,5,4,24.2,95.3,2,2026-09-11T03:23:06.626481
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",10,10,6,28.5,74,4.3,2026-09-11T03:23:07.070079
+hanoi,"Hanoi, Vietnam (Hà Nội)",4,12,4,32,55,5.1,2026-09-11T08:39:33.184041
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",12,12,8,26,94,6.1,2026-09-11T08:39:33.835329
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",11,11,8,27,85.5,1.8,2026-09-11T08:39:34.489089
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",17,17,14,31.5,60.4,3,2026-09-11T08:39:35.814067
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",9,9,7,26.1,85.1,2,2026-09-11T08:39:36.470776
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",10,10,6,31,56.5,5.4,2026-09-11T08:39:37.122021
+hanoi,"Hanoi, Vietnam (Hà Nội)",8,8,4,27,69,2,2026-09-11T13:19:32.557220
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",15,15,10,28,78,4.8,2026-09-11T13:19:33.152751
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",16,16,11,28,78,3,2026-09-11T13:19:33.886178
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",20,20,17,29.6,60.7,4,2026-09-11T13:19:35.171710
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",11,11,9,29.6,72.4,5,2026-09-11T13:19:35.769460
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",24,24,14,27,69,2.5,2026-09-11T13:19:36.387962
+hanoi,"Hanoi, Vietnam (Hà Nội)",8,8,4,26,69,2,2026-09-11T17:34:53.888133
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",10,10,7,27,83,5.1,2026-09-11T17:34:54.443200
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",9,9,6,25,94,2.5,2026-09-11T17:34:54.997859
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",15,15,12,29.6,60.7,4,2026-09-11T17:34:56.110206
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",11,11,9,27.7,85.8,4,2026-09-11T17:34:56.664347
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",20,20,13,26,69,1.2,2026-09-11T17:34:57.217253
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",100,100,,25,75,2.5,2026-09-11T20:34:44.525507
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",14,14,9,24.5,100,5.9,2026-09-11T20:34:45.075665
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",10,10,7,25,94,4.1,2026-09-11T20:34:45.633578
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",15,15,13,29.6,60.7,4,2026-09-11T20:34:46.734956
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",9,9,8,28.4,78,5,2026-09-11T20:34:47.288570
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",14,14,10,25.5,67,2.5,2026-09-11T20:34:47.835632
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",92,92,,25,74,2.8,2026-09-11T23:01:10.679758
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",12,12,8,24,94,2,2026-09-11T23:01:11.426012
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",14,14,9,24,94,3.6,2026-09-11T23:01:12.204927
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",15,15,12,29.6,60.7,4,2026-09-11T23:01:13.584614
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",9,9,7,27.8,78.4,3,2026-09-11T23:01:14.258572
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",29,28,29,26,65,3,2026-09-11T23:01:15.065992
+hanoi,"Hanoi, Vietnam (Hà Nội)",9,9,4,26,63,3.3,2026-09-12T03:28:42.662543
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",14,14,11,24.5,94,1.8,2026-09-12T03:28:43.124768
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",22,22,15,25.5,85.5,5.1,2026-09-12T03:28:43.590590
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",19,19,16,29.6,60.7,4,2026-09-12T03:28:44.556476
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",8,8,7,27.8,78.4,3,2026-09-12T03:28:45.009052
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",11,11,7,26,63,3.3,2026-09-12T03:28:45.464947
+hanoi,"Hanoi, Vietnam (Hà Nội)",9,9,4,32,52,3.6,2026-09-12T08:25:12.837398
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",12,12,8,26,94,6.6,2026-09-12T08:25:13.399927
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",19,19,13,27,88,6.6,2026-09-12T08:25:13.975285
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",16,16,14,28.6,59.3,2,2026-09-12T08:25:15.096895
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",8,8,6,25.8,89.8,5,2026-09-12T08:25:15.652583
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",9,9,5,32,52,2.5,2026-09-12T08:25:16.210844
+hanoi,"Hanoi, Vietnam (Hà Nội)",11,11,4,29.5,60,2.3,2026-09-12T12:39:42.743275
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",13,13,9,25,100,1.8,2026-09-12T12:39:43.295491
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",21,21,14,26,94,4.6,2026-09-12T12:39:43.850330
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",21,21,18,29.5,58.1,3,2026-09-12T12:39:44.950570
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",8,8,7,25.5,93.1,7,2026-09-12T12:39:45.506108
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",21,21,13,29.5,60,2.3,2026-09-12T12:39:46.069687
+hanoi,"Hanoi, Vietnam (Hà Nội)",11,11,4,28,67,1.2,2026-09-12T16:01:42.860330
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",11,11,7,24,100,0.7,2026-09-12T16:01:43.304487
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",14,14,9,25,97,4.1,2026-09-12T16:01:43.750088
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",17,17,14,27.8,60.7,2,2026-09-12T16:01:44.648870
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",10,10,9,25.5,93.1,7,2026-09-12T16:01:45.094278
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",24,24,15,28,67,1.2,2026-09-12T16:01:45.549523
+hanoi,"Hanoi, Vietnam (Hà Nội)",11,11,4,27,69,1.5,2026-09-12T18:58:36.816993
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",11,11,7,24,100,2,2026-09-12T18:58:37.319748
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",8,8,5,25,100,5.1,2026-09-12T18:58:37.835069
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",15,15,14,27.2,64,2,2026-09-12T18:58:38.836788
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",11,11,10,27.2,85.7,6,2026-09-12T18:58:39.335499
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",27,27,17,27,69,1.5,2026-09-12T18:58:39.833287
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",116,116,,28,71,,2026-09-12T21:22:08.074612
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",15,15,10,,,,2026-09-12T21:22:08.727832
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",11,11,7,,,,2026-09-12T21:22:09.406972
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",14,14,13,27,62.4,3,2026-09-12T21:22:10.785835
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",10,10,10,27.2,85.7,6,2026-09-12T21:22:11.460820
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",25,25,16,,,,2026-09-12T21:22:12.112795
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",153,153,,27,81,,2026-09-12T23:47:59.270990
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",15,15,10,,,,2026-09-12T23:47:59.834570
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",11,11,7,,,,2026-09-12T23:48:00.386102
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",14,14,13,27,62.4,3,2026-09-12T23:48:01.497698
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",10,10,10,27.2,85.7,6,2026-09-12T23:48:02.110677
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",25,25,16,,,,2026-09-12T23:48:02.666479
+hanoi,"Hanoi, Vietnam (Hà Nội)",8,8,4,,,,2026-09-13T03:34:46.096954
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",13,13,9,,,,2026-09-13T03:34:46.540089
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",15,15,10,,,,2026-09-13T03:34:46.983321
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",95,95,14,27,62.4,3,2026-09-13T03:34:47.876884
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",8,8,6,27.2,85.7,6,2026-09-13T03:34:48.319185
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",17,17,10,,,,2026-09-13T03:34:48.761875
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",112,112,,29,81,,2026-09-13T09:10:21.687886
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",7,7,5,,,,2026-09-13T09:10:22.338495
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",4,4,3,,,,2026-09-13T09:10:22.993590
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",70,70,50,27,62.4,3,2026-09-13T09:10:24.296586
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",8,8,6,27.2,85.7,6,2026-09-13T09:10:24.948919
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",12,12,7,,,,2026-09-13T09:10:25.603583
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",115,115,,26,81,3.8,2026-09-13T14:06:28.540452
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",5,5,4,27,94,0.5,2026-09-13T14:06:29.099212
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",6,6,4,28,74,0.5,2026-09-13T14:06:29.661504
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",86,86,54,25.8,74.4,5,2026-09-13T14:06:30.844401
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",4,4,4,24.2,95.3,6,2026-09-13T14:06:31.537162
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",45,45,29,27,78,2,2026-09-13T14:06:32.087336
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",118,118,,26,84,3.8,2026-09-13T17:56:25.333528
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",13,13,8,26,94,1,2026-09-13T17:56:25.983329
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",9,9,6,26,88,1.2,2026-09-13T17:56:26.631298
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",53,53,35,26.1,71.7,4,2026-09-13T17:56:27.926053
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",2,2,2,24.9,93.1,2,2026-09-13T17:56:28.574173
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",26,26,18,27,69,3.8,2026-09-13T17:56:29.224046
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",111,111,,25,87,4.1,2026-09-13T20:32:23.735866
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",9,9,6,25.5,97,0.7,2026-09-13T20:32:24.285296
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",4,4,3,26,94,2,2026-09-13T20:32:24.838370
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",61,61,45,25.3,78.1,4,2026-09-13T20:32:25.934691
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",2,2,2,24.9,93.1,2,2026-09-13T20:32:26.487335
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",14,14,10,26,78,4.1,2026-09-13T20:32:27.037464
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",100,100,,24,91,3.6,2026-09-13T22:55:47.134512
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",10,10,7,25,94,1,2026-09-13T22:55:47.592470
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",4,4,3,25,100,1,2026-09-13T22:55:48.055959
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",32,32,23,25.3,78.1,4,2026-09-13T22:55:48.968558
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",1,2,1,23.7,93,2,2026-09-13T22:55:49.424331
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",15,15,10,26,78,3.6,2026-09-13T22:55:49.886707
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",96,96,,25,85,4.1,2026-09-14T00:48:50.812408
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",9,9,6,25,100,2,2026-09-14T00:48:51.263899
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",6,6,4,26,88,1.5,2026-09-14T00:48:51.715827
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",58,47,58,25.3,78.1,4,2026-09-14T00:48:52.628482
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",1,2,1,23.7,93,2,2026-09-14T00:48:53.086936
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",14,14,10,26,78,4.1,2026-09-14T00:48:53.538464
+hanoi,"Hanoi, Vietnam (Hà Nội)",3,8,3,26.5,83,4.6,2026-09-14T05:52:16.257451
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",9,9,7,29.5,70,0.7,2026-09-14T05:52:16.702884
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",9,9,7,28,83,2.8,2026-09-14T05:52:17.149590
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",14,14,12,24.5,96.5,2,2026-09-14T05:52:18.053406
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",1,2,1,26.2,85.1,1,2026-09-14T05:52:18.521420
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",12,12,8,26.5,83,4.6,2026-09-14T05:52:19.026158
+hanoi,"Hanoi, Vietnam (Hà Nội)",8,8,4,25,94,2,2026-09-14T11:59:58.879991
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",9,9,6,29,88,3.6,2026-09-14T11:59:59.381315
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",31,31,21,27,88,2,2026-09-14T11:59:59.883414
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",14,14,10,24.4,94.7,1,2026-09-14T12:00:01.002229
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",1,2,1,26,93.1,3,2026-09-14T12:00:01.941373
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",10,10,6,25,94,2.5,2026-09-14T12:00:04.597138
+hanoi,"Hanoi, Vietnam (Hà Nội)",6,13,6,24,100,4.1,2026-09-14T18:02:39.977109
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",12,12,8,27,91,1.5,2026-09-14T18:02:40.628431
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",16,16,11,26,94,1,2026-09-14T18:02:41.284121
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",13,13,9,24.4,97,1,2026-09-14T18:02:42.591002
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",1,2,1,26,93.1,3,2026-09-14T18:02:43.247707
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",9,9,6,24,97,4.1,2026-09-14T18:02:43.915957
+hanoi,"Hanoi, Vietnam (Hà Nội)",10,10,8,24,94,3,2026-09-14T22:17:30.369918
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",10,10,7,26,97,0.5,2026-09-14T22:17:30.928494
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",12,12,8,26,94,1,2026-09-14T22:17:31.482278
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",23,23,17,23.9,96.4,2,2026-09-14T22:17:32.589406
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",2,1,2,24.4,96.5,3,2026-09-14T22:17:33.139805
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",8,8,5,24,94,3,2026-09-14T22:17:33.697332
+hanoi,"Hanoi, Vietnam (Hà Nội)",14,14,8,24,100,2,2026-09-15T01:12:34.494412
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",11,11,7,26,100,1,2026-09-15T01:12:34.937656
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",16,16,11,26,94,0.7,2026-09-15T01:12:35.380436
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",12,12,9,23.9,96.4,2,2026-09-15T01:12:36.266155
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",2,2,2,24.4,96.5,3,2026-09-15T01:12:36.709814
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",8,8,5,24,94,2.3,2026-09-15T01:12:37.156942
+hanoi,"Hanoi, Vietnam (Hà Nội)",10,10,8,29,74,4.1,2026-09-15T07:16:52.155582
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",26,26,17,31,74,4.1,2026-09-15T07:16:52.789111
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",51,51,31,32,66,4.6,2026-09-15T07:16:53.436969
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",14,14,10,26,89.8,2,2026-09-15T07:16:54.719466
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",9,9,5,24.6,95.3,3,2026-09-15T07:16:55.352646
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",7,7,4,29,74,4.1,2026-09-15T07:16:55.985637
+hanoi,"Hanoi, Vietnam (Hà Nội)",13,13,8,25,94,1,2026-09-15T13:11:46.860216
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",75,75,50,28,88,1.5,2026-09-15T13:11:47.328707
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",33,33,22,25,100,2,2026-09-15T13:11:47.788880
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",15,15,15,26,89.8,2,2026-09-15T13:11:48.739175
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",3,3,2,24.6,95.3,3,2026-09-15T13:11:49.199645
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",9,9,6,25,94,1,2026-09-15T13:11:49.663760
+hanoi,"Hanoi, Vietnam (Hà Nội)",13,13,8,25,94,2.5,2026-09-15T17:57:56.092369
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",86,86,54,26,100,0.5,2026-09-15T17:57:56.750639
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",26,26,18,26.5,91,1,2026-09-15T17:57:57.402520
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",20,18,20,26,89.8,2,2026-09-15T17:57:58.727689
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",4,4,3,24.6,95.3,3,2026-09-15T17:57:59.383858
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",10,10,6,25,94,2.5,2026-09-15T17:58:00.034779
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",121,121,,25,98,0.5,2026-09-15T21:11:30.026226
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",88,88,55,26,100,1,2026-09-15T21:11:30.688368
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",27,27,18,26,91,3,2026-09-15T21:11:31.350375
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",22,22,21,26,89.8,2,2026-09-15T21:11:32.663025
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",6,6,3,24.6,95.3,3,2026-09-15T21:11:33.316288
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",9,9,6,24,100,1.5,2026-09-15T21:11:33.971453
+hanoi,"Hanoi, Vietnam (Hà Nội)",6,6,4,24,100,3,2026-09-15T23:59:31.278388
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",114,114,64,26,94,1,2026-09-15T23:59:31.833296
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",28,28,19,26,88,2.3,2026-09-15T23:59:32.385642
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",23,23,21,26,89.8,2,2026-09-15T23:59:33.494693
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",4,4,2,24.6,95.3,,2026-09-15T23:59:34.052891
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",8,8,5,24,100,3,2026-09-15T23:59:34.606930
+hanoi,"Hanoi, Vietnam (Hà Nội)",10,10,4,24,100,3,2026-09-16T04:39:18.718774
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",89,89,54,26,94,1,2026-09-16T04:39:19.352738
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",30,30,21,26,88,2.3,2026-09-16T04:39:20.040616
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",10,10,9,26,89.8,2,2026-09-16T04:39:21.303848
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",3,3,2,24.6,95.3,,2026-09-16T04:39:21.960229
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",8,8,5,24,100,3,2026-09-16T04:39:22.594054
+hanoi,"Hanoi, Vietnam (Hà Nội)",12,12,4,26,88,3.6,2026-09-16T09:42:44.613531
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",62,62,42,31,66,1.5,2026-09-16T09:42:45.278225
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",33,33,21,30,66,1.5,2026-09-16T09:42:45.916788
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",34,34,30,26,89.8,2,2026-09-16T09:42:47.183778
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",4,4,3,24.6,95.3,,2026-09-16T09:42:47.838460
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",10,10,7,26,88,3.6,2026-09-16T09:42:48.469633
+hanoi,"Hanoi, Vietnam (Hà Nội)",14,14,4,26,94,1,2026-09-16T14:39:17.654231
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",63,63,42,31,66,1.5,2026-09-16T14:39:18.308678
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",26,26,17,29,79,2,2026-09-16T14:39:18.970970
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",39,39,36,26,89.8,2,2026-09-16T14:39:20.276026
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",4,4,2,28.2,88.9,2,2026-09-16T14:39:20.930979
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",11,11,7,26,94,1,2026-09-16T14:39:21.582325
+hanoi,"Hanoi, Vietnam (Hà Nội)",3,14,3,26,94,1,2026-09-16T18:42:24.986879
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",66,66,45,31,66,1.5,2026-09-16T18:42:25.447382
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",35,35,24,29,79,2,2026-09-16T18:42:25.905815
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",36,36,35,26,89.8,2,2026-09-16T18:42:26.827448
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",3,3,2,28.2,88.9,2,2026-09-16T18:42:27.286292
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",10,10,7,26,94,1,2026-09-16T18:42:27.746837
+hanoi,"Hanoi, Vietnam (Hà Nội)",3,14,3,26,94,1,2026-09-16T21:55:55.494628
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",66,66,45,31,66,1.5,2026-09-16T21:55:56.128841
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",32,32,21,29,79,2,2026-09-16T21:55:56.760062
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",40,40,38,26,89.8,2,2026-09-16T21:55:58.023637
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",3,3,2,28.2,88.9,2,2026-09-16T21:55:58.688243
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",6,6,4,26,94,1,2026-09-16T21:55:59.318951
+hanoi,"Hanoi, Vietnam (Hà Nội)",3,14,3,26,94,1,2026-09-17T00:11:39.484474
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",73,73,49,31,66,1.5,2026-09-17T00:11:39.923351
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",32,32,22,29,79,2,2026-09-17T00:11:40.364272
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",41,41,37,26,89.8,2,2026-09-17T00:11:41.244296
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",4,4,3,26,94,1,2026-09-17T00:11:42.121606
+hanoi,"Hanoi, Vietnam (Hà Nội)",4,4,4,26,94,1,2026-09-17T05:49:17.494336
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",57,57,36,31,66,1.5,2026-09-17T05:49:17.906355
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",26,26,18,29,79,2,2026-09-17T05:49:18.314493
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",31,31,24,26,89.8,2,2026-09-17T05:49:19.137972
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",5,5,4,26,94,1,2026-09-17T05:49:19.969775
+hanoi,"Hanoi, Vietnam (Hà Nội)",11,11,4,24.8,97.1,2,2026-09-17T11:07:19.704125
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",27,27,17,31,70.1,3,2026-09-17T11:07:20.260856
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",13,13,12,29.5,79.1,3,2026-09-17T11:07:20.816644
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",17,17,13,25,93.6,1,2026-09-17T11:07:21.966541
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",7,7,5,25,94,2.5,2026-09-17T11:07:23.075441
+hanoi,"Hanoi, Vietnam (Hà Nội)",11,11,4,25,94,1.5,2026-09-17T16:24:17.274805
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",13,13,9,28.5,85.5,1.5,2026-09-17T16:24:17.930211
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",13,13,9,27.5,85.5,1,2026-09-17T16:24:18.582309
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",36,28,36,24.8,97.1,2,2026-09-17T16:24:19.889094
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",12,12,8,25,94,1.5,2026-09-17T16:24:21.197845
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",109,109,,25,98,0.5,2026-09-17T20:02:45.603634
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",20,20,13,26,94,0.2,2026-09-17T20:02:46.061010
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",13,13,9,26,88,1.5,2026-09-17T20:02:46.519829
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",40,28,40,24.8,97.1,2,2026-09-17T20:02:47.434788
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",12,12,8,24,100,1,2026-09-17T20:02:48.359532
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",126,126,,24,99,2,2026-09-17T23:24:52.636516
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",22,22,16,25,100,0.2,2026-09-17T23:24:53.198604
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",18,18,12,26,88,1.5,2026-09-17T23:24:53.799611
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",30,27,30,24.8,97.1,2,2026-09-17T23:24:54.905580
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",17,17,11,25,94,2,2026-09-17T23:24:56.013957
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",109,109,,29,87,3.8,2026-09-18T03:33:13.684668
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",36,36,24,30,74,2,2026-09-18T03:33:14.337705
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",15,15,12,30,74,2,2026-09-18T03:33:14.990783
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",17,17,14,26.2,94.8,2,2026-09-18T03:33:16.298181
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",16,16,11,30,79,3.6,2026-09-18T03:33:17.604447
+hanoi,"Hanoi, Vietnam (Hà Nội)",11,11,4,31,70,2.5,2026-09-18T08:50:01.758586
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",15,15,12,30.5,72,3,2026-09-18T08:50:02.310243
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",10,10,10,31,70,4.6,2026-09-18T08:50:02.918018
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",34,34,31,26.2,94.8,2,2026-09-18T08:50:04.087617
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",11,11,8,31,70,2.5,2026-09-18T08:50:05.214320
+hanoi,"Hanoi, Vietnam (Hà Nội)",15,15,4,27,94,2.5,2026-09-18T13:26:55.027827
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",14,14,9,29,79,2.5,2026-09-18T13:26:55.673451
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",12,12,9,28,83,5.1,2026-09-18T13:26:56.323714
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",32,32,29,26.2,94.8,2,2026-09-18T13:26:57.628023
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",19,19,13,27,94,2.5,2026-09-18T13:26:58.927025
+hanoi,"Hanoi, Vietnam (Hà Nội)",15,15,4,27,94,2,2026-09-18T17:32:14.802043
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",7,7,5,28,83,2,2026-09-18T17:32:15.234833
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",7,7,5,27.5,91,3,2026-09-18T17:32:15.651051
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",30,29,30,26.2,94.8,2,2026-09-18T17:32:16.545715
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",20,20,13,26,97,1.8,2026-09-18T17:32:17.376230
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",149,149,,26,97,1.5,2026-09-18T20:30:48.920770
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",14,14,10,27,88,1,2026-09-18T20:30:49.417115
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",7,7,5,26,94,1.5,2026-09-18T20:30:49.902381
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",38,37,38,25.4,86.6,2,2026-09-18T20:30:50.815069
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",15,15,10,25,100,1.5,2026-09-18T20:30:51.733973
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",178,178,,26,96,1.5,2026-09-18T23:04:04.096077
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",33,33,22,26.5,97,2.3,2026-09-18T23:04:04.686832
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",5,5,3,26,100,0.5,2026-09-18T23:04:05.288438
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",29,28,29,25.4,86.6,2,2026-09-18T23:04:06.461749
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",15,15,10,25,94,1.5,2026-09-18T23:04:07.646498
+hanoi,"Hanoi, Vietnam (Hà Nội)",4,4,4,31,66,2,2026-09-19T03:30:29.872058
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",14,14,10,30,79,1,2026-09-19T03:30:30.335895
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",7,7,5,30,76.5,1.8,2026-09-19T03:30:30.780866
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",20,20,19,25.4,86.6,2,2026-09-19T03:30:31.672660
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",12,12,8,31,66,2,2026-09-19T03:30:32.565582
+hanoi,"Hanoi, Vietnam (Hà Nội)",9,9,3,33,55,2.5,2026-09-19T08:36:17.930004
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",12,12,10,31,68,3.8,2026-09-19T08:36:18.532722
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",5,5,4,30,79,4.1,2026-09-19T08:36:19.118270
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",22,22,22,32.4,55.3,2,2026-09-19T08:36:20.326785
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",9,9,5,33,55,2.5,2026-09-19T08:36:21.508641
+hanoi,"Hanoi, Vietnam (Hà Nội)",9,9,3,31,70,2.5,2026-09-19T12:55:26.619535
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",10,10,7,28,83,2.5,2026-09-19T12:55:27.074346
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",6,6,4,28.5,85.5,2.8,2026-09-19T12:55:27.534689
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",44,35,44,28.2,73,1,2026-09-19T12:55:28.467114
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",14,14,10,31,70,2.5,2026-09-19T12:55:29.392836
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",116,116,,30,80,2.3,2026-09-19T16:17:02.345880
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",6,6,4,26,94,0.5,2026-09-19T16:17:03.812554
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",4,4,3,26,88,1.5,2026-09-19T16:17:04.938779
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",51,37,51,28.2,73,1,2026-09-19T16:17:06.253419
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",18,18,12,29,79,1.5,2026-09-19T16:17:07.564897
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",125,125,,29,84,2,2026-09-19T19:11:50.647216
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",4,4,3,26,94,0.2,2026-09-19T19:11:51.063692
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",3,3,2,26,88,1,2026-09-19T19:11:51.489949
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",41,35,41,28.2,73,1,2026-09-19T19:11:52.324248
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",18,18,12,28,83,2,2026-09-19T19:11:53.153729
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",133,133,,28,85,0.5,2026-09-19T22:10:23.560967
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",7,7,5,26,94,0.7,2026-09-19T22:10:24.019146
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",4,4,3,25,94,1.2,2026-09-19T22:10:24.492032
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",35,31,35,28.2,73,1,2026-09-19T22:10:25.429643
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",18,18,12,27,88,1.2,2026-09-19T22:10:26.486947
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",146,146,,27.5,91,1.5,2026-09-20T00:44:06.094521
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",13,13,9,26,94,1,2026-09-20T00:44:06.740854
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",6,6,4,26,88,1.5,2026-09-20T00:44:07.392624
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",41,34,41,28.2,73,1,2026-09-20T00:44:08.697392
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",16,16,11,27,88,1.5,2026-09-20T00:44:10.001300
+hanoi,"Hanoi, Vietnam (Hà Nội)",6,6,3,33,59,2.5,2026-09-20T05:47:13.682830
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",7,7,5,26,94,4.1,2026-09-20T05:47:14.240842
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",5,5,4,27,88,2,2026-09-20T05:47:14.794060
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",16,16,16,26.1,86.1,1,2026-09-20T05:47:15.903288
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",18,18,12,33,59,2.5,2026-09-20T05:47:17.016271
+hanoi,"Hanoi, Vietnam (Hà Nội)",12,12,5,33,55,1.5,2026-09-20T10:46:38.567541
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",6,6,4,28,88,3,2026-09-20T10:46:39.012809
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",5,5,3,28,83,4.1,2026-09-20T10:46:39.458295
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",44,36,44,32.9,54.1,2,2026-09-20T10:46:40.348593
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",17,17,10,33,55,1.5,2026-09-20T10:46:41.240424
+hanoi,"Hanoi, Vietnam (Hà Nội)",11,11,5,28,83,0.5,2026-09-20T14:32:49.767813
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",9,9,6,26,100,1,2026-09-20T14:32:50.417251
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",14,14,9,27,88,1,2026-09-20T14:32:51.068090
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",66,66,53,27.5,74.7,2,2026-09-20T14:32:52.375461
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",30,30,19,28,83,0.5,2026-09-20T14:32:53.729486
+hanoi,"Hanoi, Vietnam (Hà Nội)",11,11,5,28,74,1,2026-09-20T18:01:10.739880
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",21,21,14,27,94,1,2026-09-20T18:01:11.670205
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",11,11,8,26.5,88,1.2,2026-09-20T18:01:12.643202
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",50,50,43,26.8,84.2,1,2026-09-20T18:01:13.772165
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",30,30,20,28,74,1,2026-09-20T18:01:14.711015
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",143,143,,28,88,1,2026-09-20T21:11:53.046988
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",18,18,12,26,94,1.8,2026-09-20T21:11:55.060620
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",7,7,4,26,94,2,2026-09-20T21:11:55.659850
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",36,36,33,26.8,84.2,1,2026-09-20T21:11:56.825699
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",35,35,23,26,88,1,2026-09-20T21:11:57.936736
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",187,187,,25.5,97.5,1.2,2026-09-20T23:53:42.917354
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",10,10,7,25,100,1,2026-09-20T23:53:43.574319
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",5,5,4,25,94,0.5,2026-09-20T23:53:44.227044
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",34,34,33,26.8,84.2,1,2026-09-20T23:53:45.532355
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",30,30,20,25,88,1.2,2026-09-20T23:53:46.847607
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",169,169,,36,64,1.2,2026-09-21T03:42:37.913528
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",5,5,3,25,100,3,2026-09-21T03:42:38.327730
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",9,9,6,25,88,1.5,2026-09-21T03:42:38.744421
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",64,46,64,25.6,84.5,2,2026-09-21T03:42:39.581839
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",26,26,16,31,66,1.5,2026-09-21T03:42:40.414291
+hanoi,"Hanoi, Vietnam (Hà Nội)",10,10,5,34,56,1,2026-09-21T09:40:52.924897
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",7,7,5,27,88,1.5,2026-09-21T09:40:53.537146
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",5,5,5,29,74,1,2026-09-21T09:40:54.106173
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",31,21,31,32.6,59.5,2,2026-09-21T09:40:55.212975
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",20,20,12,33.5,53.5,1.8,2026-09-21T09:40:56.348552
+hanoi,"Hanoi, Vietnam (Hà Nội)",4,4,5,29,83,0.7,2026-09-21T16:15:47.321980
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",9,9,6,28,83,2,2026-09-21T16:15:47.781840
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",10,10,7,27,88,1.5,2026-09-21T16:15:48.244161
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",34,34,31,28.3,73.9,3,2026-09-21T16:15:49.174841
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",30,30,18,30,74,1.5,2026-09-21T16:15:50.088106
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",170,170,,27,90,1,2026-09-21T20:49:03.273980
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",8,8,5,25,94,0.5,2026-09-21T20:49:03.736817
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",8,8,5,25,94,0.5,2026-09-21T20:49:04.197286
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",30,30,26,27.1,83.2,2,2026-09-21T20:49:05.120958
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",35,35,24,26,94,1,2026-09-21T20:49:06.035338
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",225,225,,26,97,0.2,2026-09-21T23:51:34.664686
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",5,5,3,25,94,2,2026-09-21T23:51:35.219116
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",11,11,7,26,94,1,2026-09-21T23:51:35.766406
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",33,33,29,26.8,87.8,2,2026-09-21T23:51:36.859303
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",39,39,26,25,94,0.2,2026-09-21T23:51:37.955332
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",224,224,,34,70,0.5,2026-09-22T03:40:30.668742
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",4,4,3,24,100,5.1,2026-09-22T03:40:31.302896
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",10,10,7,28,83,1.5,2026-09-22T03:40:31.933596
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",58,58,56,26.5,89.9,1,2026-09-22T03:40:33.285006
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",29,29,17,30.5,72,1,2026-09-22T03:40:34.643538
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",155,155,,34,62,2,2026-09-22T09:05:42.790855
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",5,5,4,26,88,1,2026-09-22T09:05:43.260362
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",5,5,3,27,88,1.5,2026-09-22T09:05:43.888509
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",28,26,28,31,66,1,2026-09-22T09:05:44.914058
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",11,11,8,30,77.8,4,2026-09-22T09:05:45.389925
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",18,18,10,34,56,2,2026-09-22T09:05:45.849245
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",164,164,,32,71,1.8,2026-09-22T14:23:48.423242
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",15,15,10,26,94,0.5,2026-09-22T14:23:49.055054
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",11,11,7,27,88,0.5,2026-09-22T14:23:49.688485
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",46,45,46,28.6,79,3,2026-09-22T14:23:50.956565
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",86,86,54,28.5,89,3,2026-09-22T14:23:51.589101
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",53,53,34,30,76.5,1.5,2026-09-22T14:23:52.226154
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",160,160,,30,84,2.3,2026-09-22T18:32:35.153059
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",25,25,17,25,100,0.5,2026-09-22T18:32:35.660752
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",11,11,8,26,94,1.5,2026-09-22T18:32:36.161302
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",36,36,34,28.6,79,3,2026-09-22T18:32:37.176970
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",116,116,62,28.5,89,3,2026-09-22T18:32:37.678411
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",74,74,50,28,83,2,2026-09-22T18:32:38.195161
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",143,143,,29,84,1.5,2026-09-22T21:49:04.827485
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",19,19,13,25,100,1,2026-09-22T21:49:05.481195
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",7,7,5,26,94,1,2026-09-22T21:49:06.138966
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",33,33,30,27.6,88.9,1,2026-09-22T21:49:07.421929
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",89,89,54,28,84.3,1,2026-09-22T21:49:08.094240
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",55,55,37,27,94,1.5,2026-09-22T21:49:08.725987
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",140,140,,29,89,2.3,2026-09-23T00:03:20.135969
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",24,24,16,24,100,0.2,2026-09-23T00:03:20.730156
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",5,5,4,25,94,1.5,2026-09-23T00:03:21.332043
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",30,30,25,26.8,89.9,1,2026-09-23T00:03:22.576070
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",75,75,49,28,84.3,1,2026-09-23T00:03:23.185588
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",44,44,29,27,83,3.6,2026-09-23T00:03:23.800174
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",124,124,,31,80,2.5,2026-09-23T05:33:20.995689
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",17,17,11,27,88,1.8,2026-09-23T05:33:21.627082
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",6,6,4,27,88,1.5,2026-09-23T05:33:22.264399
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",30,30,30,30,74.6,2,2026-09-23T05:33:23.526559
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",19,19,15,25.8,94.8,3,2026-09-23T05:33:24.158385
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",40,40,25,29,81,2.8,2026-09-23T05:33:24.788970
+hanoi,"Hanoi, Vietnam (Hà Nội)",7,7,5,28,83,2,2026-09-23T10:54:57.471273
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",18,18,12,26,94,1,2026-09-23T10:54:58.041857
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",6,6,4,27,88,2.5,2026-09-23T10:54:58.608378
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",28,25,28,32.4,63.9,1,2026-09-23T10:54:59.808227
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",20,20,16,27.6,82.7,1,2026-09-23T10:55:00.358316
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",17,17,11,28,83,2,2026-09-23T10:55:00.925742
+hanoi,"Hanoi, Vietnam (Hà Nội)",9,9,5,26,94,2,2026-09-23T15:19:57.234024
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",48,48,32,26,94,1,2026-09-23T15:19:57.795536
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",4,4,3,26,94,3,2026-09-23T15:19:58.347289
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",26,26,23,32.4,63.9,1,2026-09-23T15:19:59.474619
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",28,26,28,26.8,89.9,1,2026-09-23T15:20:00.056024
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",20,20,13,26,94,2,2026-09-23T15:20:00.620080
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",165,165,,27,95,1.8,2026-09-23T19:29:30.633559
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",50,50,34,25.5,97,1,2026-09-23T19:29:31.148476
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",8,8,5,26,94,2,2026-09-23T19:29:31.666331
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",24,24,22,27.4,81.2,1,2026-09-23T19:29:32.672033
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",22,21,22,24.8,94.8,1,2026-09-23T19:29:33.171486
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",19,19,13,26,94,1,2026-09-23T19:29:33.673055
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",153,153,,26,96,1.5,2026-09-23T22:44:19.837141
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",15,15,10,25,100,1,2026-09-23T22:44:20.289741
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",7,7,4,25,100,1,2026-09-23T22:44:20.744362
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",22,22,20,27.4,81.2,1,2026-09-23T22:44:21.665461
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",15,15,14,24.8,94.8,1,2026-09-23T22:44:22.120383
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",27,27,18,26,88,1.5,2026-09-23T22:44:22.575069
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",154,154,,28,90,0.7,2026-09-24T01:09:04.089705
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",12,12,8,26,94,0.5,2026-09-24T01:09:04.750974
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",8,8,5,26,94,0.5,2026-09-24T01:09:05.409865
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",22,22,20,27.4,81.2,1,2026-09-24T01:09:06.729467
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",24,23,24,24.8,94.8,1,2026-09-24T01:09:07.388753
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",31,31,21,25,94,0.5,2026-09-24T01:09:08.048549
+hanoi,"Hanoi, Vietnam (Hà Nội)",7,7,2,34,56,3,2026-09-24T07:18:06.458391
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",5,5,3,29,79,2,2026-09-24T07:18:07.130641
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",7,7,7,29,83,3.6,2026-09-24T07:18:07.714231
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",22,22,21,32.3,62.8,2,2026-09-24T07:18:08.971706
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",14,14,14,25.5,94.8,1,2026-09-24T07:18:09.545827
+hanoi,"Hanoi, Vietnam (Hà Nội)",8,8,2,29,79,2,2026-09-24T13:18:23.191381
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",6,6,4,27,94,0.7,2026-09-24T13:18:23.807554
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",10,10,7,28,88,4.1,2026-09-24T13:18:24.378034
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",44,44,38,27.6,81.3,2,2026-09-24T13:18:25.513489
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",15,14,15,26.5,94.3,2,2026-09-24T13:18:26.087588
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",26,26,17,29,79,2,2026-09-24T13:18:26.665517
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",89,89,,28,88,1.2,2026-09-24T18:15:21.934657
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",17,17,11,28,88,1,2026-09-24T18:15:22.712401
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",10,10,7,27,94,0.7,2026-09-24T18:15:25.072520
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",29,29,25,27.6,81.3,2,2026-09-24T18:15:26.673592
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",6,5,6,26.5,94.3,2,2026-09-24T18:15:27.311039
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",21,21,14,27,88,1,2026-09-24T18:15:27.942251
+hanoi,"Hanoi, Vietnam (Hà Nội)",9,9,2,26,94,1.5,2026-09-24T22:01:45.820018
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",12,12,8,27,94,0.7,2026-09-24T22:01:46.474531
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",7,7,5,26,94,1.5,2026-09-24T22:01:47.127235
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",30,30,27,26.9,81.2,1,2026-09-24T22:01:48.434316
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",6,5,6,26,93.1,2,2026-09-24T22:01:49.078959
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",17,17,12,26,94,1.5,2026-09-24T22:01:49.739017
+hanoi,"Hanoi, Vietnam (Hà Nội)",9,9,2,27,88,2,2026-09-25T01:10:45.032116
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",27,27,18,27,94,0.2,2026-09-25T01:10:45.479385
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",9,9,6,26,94,1,2026-09-25T01:10:45.930650
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",25,25,21,25.8,91.4,3,2026-09-25T01:10:46.833952
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",6,5,6,25.8,94.8,3,2026-09-25T01:10:47.291482
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",26,26,18,27,88,2,2026-09-25T01:10:47.742460
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",130,130,,33,70.5,1.2,2026-09-25T07:12:38.088772
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",8,8,6,29.5,78.5,4.8,2026-09-25T07:12:38.685030
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",11,11,9,31,70,5.1,2026-09-25T07:12:39.241341
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",25,25,23,30.8,71.3,1,2026-09-25T07:12:40.352874
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",11,11,9,25.6,96.5,1,2026-09-25T07:12:40.903644
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",20,20,14,32,66,1.5,2026-09-25T07:12:41.460409
+hanoi,"Hanoi, Vietnam (Hà Nội)",4,4,5,29,83,4.1,2026-09-25T13:18:10.762595
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",9,9,6,28,88,1,2026-09-25T13:18:11.348695
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",12,12,9,28,88,2,2026-09-25T13:18:11.941696
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",27,27,26,27.3,87.8,3,2026-09-25T13:18:13.118488
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",11,11,10,25.7,96.5,1,2026-09-25T13:18:13.746793
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",38,38,23,29,83,4.1,2026-09-25T13:18:14.361276
+hanoi,"Hanoi, Vietnam (Hà Nội)",4,4,5,28,88,2.8,2026-09-25T18:15:34.780512
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",13,13,9,27,94,0.7,2026-09-25T18:15:35.427678
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",12,12,8,28,78,0.5,2026-09-25T18:15:36.091743
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",22,22,19,26.9,91,2,2026-09-25T18:15:37.396483
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",24,24,16,28,88,3,2026-09-25T18:15:38.753464
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",115,115,,27,93,2,2026-09-25T21:59:55.836111
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",14,14,9,26,94,1,2026-09-25T21:59:56.249847
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",12,12,8,26,94,2,2026-09-25T21:59:56.666836
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",24,24,20,26.9,91,2,2026-09-25T21:59:57.495051
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",21,21,14,26,100,2,2026-09-25T21:59:58.325193
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",129,129,,28,92,2,2026-09-26T00:32:08.494492
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",14,14,9,27,94,0.5,2026-09-26T00:32:09.109174
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",14,14,10,27,88,1.5,2026-09-26T00:32:09.711915
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",19,19,17,26.9,91,2,2026-09-26T00:32:10.922187
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",18,18,12,27,94,2,2026-09-26T00:32:12.120522
+hanoi,"Hanoi, Vietnam (Hà Nội)",4,4,3,33,62,3,2026-09-26T05:54:38.243597
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",12,12,8,30,70,2.5,2026-09-26T05:54:38.793292
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",14,14,11,31.5,64,1.5,2026-09-26T05:54:39.341209
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",23,23,21,29.6,76.4,2,2026-09-26T05:54:40.447366
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",25,25,15,33,62,3,2026-09-26T05:54:41.575005
+hanoi,"Hanoi, Vietnam (Hà Nội)",3,3,2,32,62,5.1,2026-09-26T10:56:21.505712
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",12,12,8,29,79,2,2026-09-26T10:56:22.057112
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",9,9,6,27,78,2.5,2026-09-26T10:56:22.638997
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",16,14,16,30.4,74.2,3,2026-09-26T10:56:23.766187
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",11,11,7,32,62,5.1,2026-09-26T10:56:24.892026
+hanoi,"Hanoi, Vietnam (Hà Nội)",8,8,2,29,79,4.6,2026-09-26T14:55:05.667419
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",12,12,8,28,88,1,2026-09-26T14:55:06.274876
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",7,7,5,26,83,2,2026-09-26T14:55:06.893629
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",17,17,17,30.4,74.2,3,2026-09-26T14:55:08.145325
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",18,18,12,29,79,4.6,2026-09-26T14:55:09.332923
+hanoi,"Hanoi, Vietnam (Hà Nội)",8,8,2,27,88,3.6,2026-09-26T18:23:26.843044
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",26,26,17,27,94,1,2026-09-26T18:23:27.473680
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",4,4,3,25,88,1.5,2026-09-26T18:23:28.110856
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",21,21,20,30.4,74.2,3,2026-09-26T18:23:29.375199
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",14,14,9,27,94,3.6,2026-09-26T18:23:30.636544
+hanoi,"Hanoi, Vietnam (Hà Nội)",8,8,1,26,94,2,2026-09-26T21:53:01.129455
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",28,28,19,26,88,1,2026-09-26T21:53:01.691822
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",4,4,2,25,94,1,2026-09-26T21:53:02.311483
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",17,17,16,26.4,92.6,1,2026-09-26T21:53:03.741545
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",12,12,8,26,94,2,2026-09-26T21:53:04.853857
+hanoi,"Hanoi, Vietnam (Hà Nội)",12,12,1,26,100,2,2026-09-27T00:18:26.896408
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",36,36,24,26,88,1,2026-09-27T00:18:27.350389
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",5,5,3,25.5,91,1.5,2026-09-27T00:18:27.803177
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",22,22,20,26.4,92.6,1,2026-09-27T00:18:28.710097
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",19,19,13,26,100,2,2026-09-27T00:18:29.620943
+hanoi,"Hanoi, Vietnam (Hà Nội)",10,10,1,33,66,3.6,2026-09-27T06:19:48.251721
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",10,10,8,32.5,64,3.3,2026-09-27T06:19:48.833968
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",10,10,8,32,66,2.5,2026-09-27T06:19:49.439415
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",23,21,23,26.6,89.9,2,2026-09-27T06:19:50.637780
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",14,14,9,33,66,3.6,2026-09-27T06:19:51.878900
+hanoi,"Hanoi, Vietnam (Hà Nội)",13,13,1,30,79,5.1,2026-09-27T12:49:24.437944
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",25,25,17,27,88,1.2,2026-09-27T12:49:24.945104
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",7,7,5,27,78,1.5,2026-09-27T12:49:25.446814
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",27,22,27,29.4,82,1,2026-09-27T12:49:26.454529
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",26,26,17,30,79,5.1,2026-09-27T12:49:27.534235
+hanoi,"Hanoi, Vietnam (Hà Nội)",13,13,1,28,88,4.1,2026-09-27T17:33:25.289721
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",35,35,24,26,88,1.5,2026-09-27T17:33:25.870868
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",5,5,3,27,78,1.5,2026-09-27T17:33:26.464482
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",19,16,19,29.4,82,1,2026-09-27T17:33:27.683179
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",23,23,15,28,88,4.1,2026-09-27T17:33:28.870254
+hanoi,"Hanoi, Vietnam (Hà Nội)",8,8,3,27,94,3,2026-09-27T20:59:15.018658
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",27,27,18,26,88,1.8,2026-09-27T20:59:15.478303
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",4,4,3,26,83,2,2026-09-27T20:59:15.932343
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",21,17,21,29.4,82,1,2026-09-27T20:59:16.837750
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",18,18,12,27,94,3,2026-09-27T20:59:17.747088
+hanoi,"Hanoi, Vietnam (Hà Nội)",10,10,3,27,94,2.8,2026-09-27T23:45:21.294651
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",25,25,17,25,94,0.5,2026-09-27T23:45:21.814696
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",7,7,5,26,88,1.5,2026-09-27T23:45:22.358279
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",25,25,25,29.4,82,1,2026-09-27T23:45:23.357977
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",13,13,9,27,94,3,2026-09-27T23:45:24.393563
+hanoi,"Hanoi, Vietnam (Hà Nội)",13,13,3,32,70,1.5,2026-09-28T04:04:49.194888
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",23,23,16,33,55,2,2026-09-28T04:04:49.845590
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",9,9,8,33,53.5,3,2026-09-28T04:04:50.497909
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",26,25,26,32.8,67.1,1,2026-09-28T04:04:51.807445
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",22,22,14,32,70,1.5,2026-09-28T04:04:53.110882
+hanoi,"Hanoi, Vietnam (Hà Nội)",9,9,3,34,59,3.6,2026-09-28T11:29:03.087931
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",17,17,12,30,70,3,2026-09-28T11:29:03.566717
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",10,10,8,30.5,70,3.6,2026-09-28T11:29:04.012029
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",19,18,19,31.3,72.2,2,2026-09-28T11:29:04.904020
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",10,10,6,33.5,59,4.1,2026-09-28T11:29:05.795107
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",87,87,,29,91,3.3,2026-09-28T19:20:41.037904
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",14,14,10,27,83,1,2026-09-28T19:20:41.587834
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",9,9,6,28,83,1.5,2026-09-28T19:20:42.137116
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",23,23,23,31.3,72.2,2,2026-09-28T19:20:43.264873
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",23,23,15,28,94,3.6,2026-09-28T19:20:44.369510
+hanoi,"Hanoi, Vietnam (Hà Nội)",8,8,3,28,94,2.5,2026-09-29T00:13:22.218760
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",15,15,10,26,88,1,2026-09-29T00:13:22.848946
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",9,9,6,27,83,1.5,2026-09-29T00:13:23.491502
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",25,25,24,27.7,92.7,3,2026-09-29T00:13:24.762602
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",19,19,13,28,94,2.5,2026-09-29T00:13:26.030831
+hanoi,"Hanoi, Vietnam (Hà Nội)",5,8,5,35.5,50,1.5,2026-09-29T06:37:18.585122
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",18,18,13,34.5,52.5,3,2026-09-29T06:37:19.246465
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",7,7,6,34,52,4.1,2026-09-29T06:37:20.204123
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",24,24,24,28,92.1,2,2026-09-29T06:37:24.137872
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",21,21,14,35.5,50,1.5,2026-09-29T06:37:25.054854
+hanoi,"Hanoi, Vietnam (Hà Nội)",4,4,6,31.5,72.5,2.8,2026-09-29T13:47:46.694093
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",15,15,11,30,79,1.5,2026-09-29T13:47:47.323264
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",16,16,12,31,66,2.8,2026-09-29T13:47:47.872480
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",29,26,29,28.9,83.4,3,2026-09-29T13:47:48.983101
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",18,18,12,31.5,72.5,2.8,2026-09-29T13:47:50.098592
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",115,115,,30,88,3.6,2026-09-29T19:08:34.767714
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",17,17,11,27.5,83,0.7,2026-09-29T19:08:35.326482
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",4,4,3,28,78,2,2026-09-29T19:08:35.890926
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",20,20,20,28.9,83.4,3,2026-09-29T19:08:42.553673
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",34,34,22,29,83,3.6,2026-09-29T19:08:43.683372
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",86,86,,30,89,2.8,2026-09-29T23:28:35.151096
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",24,24,16,26,85.5,1.8,2026-09-29T23:28:35.809069
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",5,5,3,28,74,0.5,2026-09-29T23:28:36.459235
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",16,16,16,27.9,92.1,3,2026-09-29T23:28:37.785475
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",23,23,15,28,94,3.8,2026-09-29T23:28:39.085206
+hanoi,"Hanoi, Vietnam (Hà Nội)",10,10,6,33,66,1.2,2026-09-30T04:21:48.822881
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",26,26,18,34.5,50.5,1.8,2026-09-30T04:21:49.472033
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",26,26,17,32.5,57,1.8,2026-09-30T04:21:50.124226
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",26,23,26,27.9,92.1,3,2026-09-30T04:21:51.438470
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",22,22,14,33,66,1.2,2026-09-30T04:21:52.735321
+hanoi,"Hanoi, Vietnam (Hà Nội)",8,8,2,35,49,2,2026-09-30T10:55:47.919222
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",17,17,12,31,70,2.5,2026-09-30T10:55:48.501430
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",8,8,8,32,59,4.6,2026-09-30T10:55:49.074542
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",29,28,29,27.9,92.1,3,2026-09-30T10:55:50.236523
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",16,16,10,35,49,2,2026-09-30T10:55:51.385996
+hanoi,"Hanoi, Vietnam (Hà Nội)",7,7,2,29,83,3.6,2026-09-30T16:43:08.440946
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",26,26,18,29,79,0.7,2026-09-30T16:43:08.964918
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",15,15,11,30,70,2.3,2026-09-30T16:43:09.503200
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",21,21,20,27.9,89.4,2,2026-09-30T16:43:10.494302
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",41,41,27,29,83,3.6,2026-09-30T16:43:11.531569
+hanoi,"Hanoi, Vietnam (Hà Nội)",10,10,2,28,94,2,2026-09-30T21:15:00.172984
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",20,20,14,26,83,1,2026-09-30T21:15:00.784376
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",9,9,6,27.5,85.5,0.7,2026-09-30T21:15:01.385737
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",19,19,19,27.6,93.2,3,2026-09-30T21:15:02.629515
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",22,22,15,28,94,3.6,2026-09-30T21:15:03.931243
+hanoi,"Hanoi, Vietnam (Hà Nội)",13,13,2,28,94,3,2026-10-01T01:06:06.257829
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",29,29,20,25.5,91,1.2,2026-10-01T01:06:06.871175
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",18,18,12,27,83,1,2026-10-01T01:06:07.469989
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",19,18,19,27.4,92.1,2,2026-10-01T01:06:08.756717
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",14,14,9,28,94,2.3,2026-10-01T01:06:09.944296
+hanoi,"Hanoi, Vietnam (Hà Nội)",13,13,2,35,56,1.8,2026-10-01T08:24:26.635269
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",24,24,20,33,57,4.1,2026-10-01T08:24:27.053699
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",9,9,7,33.5,57.5,3.6,2026-10-01T08:24:27.474987
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",19,16,19,27.4,92.1,2,2026-10-01T08:24:28.311457
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",18,18,14,32.4,72.4,3,2026-10-01T08:24:28.729659
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",26,26,16,35,56,1.8,2026-10-01T08:24:29.154750
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",94,94,,30.5,85.5,3.6,2026-10-01T16:02:36.569180
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",25,25,17,29,83,1.8,2026-10-01T16:02:37.207747
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",20,20,13,29,81,1.5,2026-10-01T16:02:37.841422
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",26,26,26,28.8,84.9,2,2026-10-01T16:02:39.119955
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",10,9,10,30.1,90.1,1,2026-10-01T16:02:39.759397
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",28,28,18,30,84,3.6,2026-10-01T16:02:40.407840
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",102,102,,28,95,2.5,2026-10-01T21:35:10.199734
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",35,35,24,25.5,94,1.5,2026-10-01T21:35:10.831938
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",14,14,9,27,91,1.2,2026-10-01T21:35:11.485523
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",18,18,15,27.6,92.1,1,2026-10-01T21:35:12.791627
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",6,6,5,27.6,96,1,2026-10-01T21:35:13.445834
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",30,30,20,28,94,3,2026-10-01T21:35:14.099500
+hanoi,"Hanoi, Vietnam (Hà Nội)",10,10,2,29,88,3.3,2026-10-02T01:19:23.128622
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",32,32,24,27.5,76,1.5,2026-10-02T01:19:23.576337
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",22,22,15,29.5,76.5,1.8,2026-10-02T01:19:24.021261
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",19,19,18,27.6,90.5,2,2026-10-02T01:19:24.912985
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",16,9,16,26.8,93.2,1,2026-10-02T01:19:25.357982
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",34,34,23,29,88,3.3,2026-10-02T01:19:25.801736
+hanoi,"Hanoi, Vietnam (Hà Nội)",7,7,2,36,51.5,2.8,2026-10-02T08:00:16.319792
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",32,32,23,33,59,3.3,2026-10-02T08:00:16.778161
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",16,16,11,34,59,4.1,2026-10-02T08:00:17.233067
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",16,16,16,27.6,90.5,2,2026-10-02T08:00:18.295012
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",4,4,3,26.8,93.2,1,2026-10-02T08:00:19.548883
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",21,21,12,36,51.5,2.8,2026-10-02T08:00:20.248343
+hanoi,"Hanoi, Vietnam (Hà Nội)",9,9,2,30,74,4.3,2026-10-02T15:26:10.745919
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",25,25,17,29,83,1.8,2026-10-02T15:26:11.303873
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",30,30,20,29.5,86,1,2026-10-02T15:26:11.857913
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",40,40,33,27.6,90.5,2,2026-10-02T15:26:12.962467
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",9,9,8,29.6,83.5,1,2026-10-02T15:26:13.519242
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",34,34,22,30,74,4.3,2026-10-02T15:26:14.090838
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",88,88,,28,92,4.1,2026-10-02T20:23:09.299236
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",39,39,26,26.5,91,1,2026-10-02T20:23:09.913432
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",21,21,14,28,83,1,2026-10-02T20:23:10.508006
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",24,24,20,27.4,90.5,1,2026-10-02T20:23:12.094098
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",4,4,4,27.3,92.6,1,2026-10-02T20:23:12.750271
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",24,24,16,27,94,4.1,2026-10-02T20:23:13.633035
+hanoi,"Hanoi, Vietnam (Hà Nội)",9,9,2,27.5,94,4.1,2026-10-03T00:11:04.265979
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",40,40,28,26,85.5,1.5,2026-10-03T00:11:04.917734
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",26,26,17,27.5,85.5,0.5,2026-10-03T00:11:05.565977
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",20,20,18,27.4,90.5,1,2026-10-03T00:11:06.908566
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",10,8,10,26.2,95.4,1,2026-10-03T00:11:07.615928
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",27,27,18,27.5,94,4.1,2026-10-03T00:11:08.270922
+hanoi,"Hanoi, Vietnam (Hà Nội)",10,10,2,33,62,3.3,2026-10-03T06:05:08.194845
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",44,44,28,32.5,66,3.3,2026-10-03T06:05:08.749167
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",25,25,17,33,66,3.6,2026-10-03T06:05:09.320756
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",18,18,17,27.7,86.3,2,2026-10-03T06:05:10.463116
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",32,32,25,26.3,94.8,1,2026-10-03T06:05:11.017398
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",29,29,19,33,62,3,2026-10-03T06:05:11.573900
+hanoi,"Hanoi, Vietnam (Hà Nội)",14,14,3,31,72,5.9,2026-10-03T12:15:51.254228
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",29,29,19,29.5,74.5,2.8,2026-10-03T12:15:53.747450
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",20,20,14,31,74,3.8,2026-10-03T12:15:56.428219
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",27,24,27,27.7,86.3,2,2026-10-03T12:15:58.438139
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",48,48,34,26.3,94.8,1,2026-10-03T12:15:59.053160
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",36,36,23,31,72,5.9,2026-10-03T12:15:59.924468
+hanoi,"Hanoi, Vietnam (Hà Nội)",14,14,3,29,83,4.1,2026-10-03T17:00:20.247084
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",30,30,20,28.5,81,1.2,2026-10-03T17:00:20.710429
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",24,24,16,29,79,1,2026-10-03T17:00:21.228770
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",21,21,18,27.7,86.3,2,2026-10-03T17:00:22.153087
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",39,39,36,29.2,84.9,1,2026-10-03T17:00:22.604168
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",31,31,21,29,83,4.1,2026-10-03T17:00:23.071597
 hanoi,"Hanoi, Vietnam (Hà Nội)",14,14,3,32.5,64,5.9,2026-10-03T18:12:12.876719
 da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",31,31,21,30,70,3.6,2026-10-03T18:12:13.774751
 hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",22,22,15,31.5,70,3.8,2026-10-03T18:12:14.606618
 quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",24,21,24,27.7,86.3,2,2026-10-03T18:12:16.302578
 ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",56,56,39,26.3,94.8,1,2026-10-03T18:12:17.175878
 viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",28,28,18,32.5,64,5.9,2026-10-03T18:12:18.025865
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",115,115,,28,95,2,2026-10-03T20:40:22.090120
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",33,33,22,26,88,0.7,2026-10-03T20:40:22.760246
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",24,24,16,28,83,1,2026-10-03T20:40:23.410247
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",19,19,17,27.5,90.5,2,2026-10-03T20:40:24.713951
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",19,19,17,28.3,88.4,1,2026-10-03T20:40:25.362498
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",24,24,16,27,94,2,2026-10-03T20:40:26.009350
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",91,91,,28,95,2.5,2026-10-03T23:32:48.139458
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",37,37,25,25,88,1.5,2026-10-03T23:32:48.776527
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",23,23,15,27,88,1.5,2026-10-03T23:32:49.434115
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",20,20,18,27.5,90.5,2,2026-10-03T23:32:50.725920
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",19,16,19,27.4,92.6,1,2026-10-03T23:32:51.361643
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",23,23,15,28,94,1.5,2026-10-03T23:32:52.014583
+hanoi,"Hanoi, Vietnam (Hà Nội)",12,12,3,26.5,94,2.5,2026-10-04T04:40:19.011934
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",54,54,35,32,64,1.5,2026-10-04T04:40:19.602453
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",24,24,17,33.5,66,1.2,2026-10-04T04:40:20.235963
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",16,16,15,27.5,90.5,2,2026-10-04T04:40:21.445343
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",13,13,11,32.6,72,3,2026-10-04T04:40:22.054775
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",22,22,15,26.5,94,2.5,2026-10-04T04:40:22.672596
+hanoi,"Hanoi, Vietnam (Hà Nội)",10,10,3,28,83,2.3,2026-10-04T10:56:31.963387
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",17,17,12,31,66,3.6,2026-10-04T10:56:32.533102
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",20,20,14,33,62,3.8,2026-10-04T10:56:33.109306
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",10,10,9,24.4,79.9,1,2026-10-04T10:56:34.234883
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",9,9,7,30.7,78.8,2,2026-10-04T10:56:34.786991
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",21,21,14,28,83,2.3,2026-10-04T10:56:35.354388
+hanoi,"Hanoi, Vietnam (Hà Nội)",10,10,3,27,88,1.5,2026-10-04T15:42:21.550664
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",10,10,7,29,79,1,2026-10-04T15:42:22.009375
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",15,15,10,30,84,1,2026-10-04T15:42:22.466256
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",9,9,9,24.4,79.9,1,2026-10-04T15:42:23.386562
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",16,16,14,30.7,78.8,2,2026-10-04T15:42:23.843700
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",12,12,8,27,88,1.5,2026-10-04T15:42:24.305401
+hanoi,"Hanoi, Vietnam (Hà Nội)",4,10,4,24,94,1.5,2026-10-04T19:15:02.998535
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",15,15,10,28,83,0.2,2026-10-04T19:15:03.567542
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",27,27,18,29,83,1.5,2026-10-04T19:15:04.125763
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",6,5,6,25,81.9,2,2026-10-04T19:15:05.240681
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",5,4,5,30.7,78.8,2,2026-10-04T19:15:05.797140
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",9,9,6,24.5,94,1.8,2026-10-04T19:15:06.353265
+hanoi,"Hanoi, Vietnam (Hà Nội)",13,13,6,22.5,94,3.3,2026-10-04T22:48:38.917918
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",29,29,19,27,83,0.7,2026-10-04T22:48:39.558338
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",24,24,16,28,88,2.8,2026-10-04T22:48:40.203294
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",7,4,7,25,81.9,2,2026-10-04T22:48:41.490420
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",2,3,2,30.7,78.8,2,2026-10-04T22:48:42.148577
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",4,4,3,23,88,3.6,2026-10-04T22:48:42.781759
+hanoi,"Hanoi, Vietnam (Hà Nội)",12,12,6,23,94,1.5,2026-10-05T01:40:08.682937
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",44,44,29,28.5,78.5,1,2026-10-05T01:40:09.291794
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",14,14,10,29,83,5.9,2026-10-05T01:40:09.897585
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",8,4,8,23,89.1,3,2026-10-05T01:40:11.106598
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",9,6,9,24.7,89.7,1,2026-10-05T01:40:11.704121
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",5,5,4,22.5,94,1.5,2026-10-05T01:40:12.302973
+hanoi,"Hanoi, Vietnam (Hà Nội)",7,6,7,27.5,57.5,5.4,2026-10-05T08:29:07.786798
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",30,30,20,31,68,9.2,2026-10-05T08:29:08.203038
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",6,6,5,31,74,4.8,2026-10-05T08:29:08.618369
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",16,4,16,23,82.7,4,2026-10-05T08:29:09.452642
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",17,17,14,29.2,71,4,2026-10-05T08:29:09.877636
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",4,4,3,27.5,57.5,5.4,2026-10-05T08:29:10.295920
+hanoi,"Hanoi, Vietnam (Hà Nội)",4,4,4,24,64,1.8,2026-10-05T17:59:51.360669
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",16,16,11,27,78,1,2026-10-05T17:59:52.008033
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",8,8,6,28,85.5,1.8,2026-10-05T17:59:52.678288
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",58,5,58,24.6,72.4,3,2026-10-05T17:59:53.989799
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",6,6,5,26.9,84.2,3,2026-10-05T17:59:54.645740
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",7,7,5,24,64,1.8,2026-10-05T17:59:55.311743
+hanoi,"Hanoi, Vietnam (Hà Nội)",13,13,6,23,64,2.3,2026-10-05T23:58:49.293209
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",32,32,22,25,94,0.5,2026-10-05T23:58:49.793743
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",3,3,2,25,100,3.6,2026-10-05T23:58:50.296612
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",70,9,70,21.7,69.2,4,2026-10-05T23:58:51.302199
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",4,4,3,22.6,96.4,4,2026-10-05T23:58:51.806717
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",5,5,3,23,64,2.5,2026-10-05T23:58:52.308614
+hanoi,"Hanoi, Vietnam (Hà Nội)",15,15,6,28,45,5.1,2026-10-06T06:07:37.367920
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",14,14,8,29,70,3.8,2026-10-06T06:07:37.940465
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",3,3,2,26,88,5.6,2026-10-06T06:07:38.513520
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",11,9,11,21.4,66.1,3,2026-10-06T06:07:39.629102
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",15,15,9,21.8,92.3,5,2026-10-06T06:07:40.199308
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",3,3,2,28,45,5.1,2026-10-06T06:07:40.821084
+hanoi,"Hanoi, Vietnam (Hà Nội)",12,12,6,26,61,1,2026-10-06T13:58:14.105665
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",5,5,3,25,83,1.5,2026-10-06T13:58:14.676367
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",10,10,7,24,94,4.8,2026-10-06T13:58:15.241841
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",70,70,58,21.4,66.1,3,2026-10-06T13:58:16.397407
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",33,33,25,23.5,79.3,3,2026-10-06T13:58:16.986661
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",3,3,2,26,61,1,2026-10-06T13:58:17.556001
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",152,152,,24,76,1,2026-10-06T19:25:12.136264
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",6,6,4,24,94,2.3,2026-10-06T19:25:12.592645
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",14,14,10,24,88,4.8,2026-10-06T19:25:13.037410
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",41,41,37,23,74.4,3,2026-10-06T19:25:13.929343
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",21,21,19,23,85.8,3,2026-10-06T19:25:14.373321
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",147,147,,23,85,1,2026-10-06T23:37:11.284560
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",10,10,7,24,94,2,2026-10-06T23:37:11.838380
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",13,13,9,24,91,3.6,2026-10-06T23:37:12.390577
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",20,19,20,23,74.4,3,2026-10-06T23:37:13.504536
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",27,27,23,23,85.8,3,2026-10-06T23:37:14.056636
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",91,91,,28,47,3.6,2026-10-07T04:42:15.146704
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",6,6,4,24,94,1.8,2026-10-07T04:42:15.647531
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",13,13,9,25,88,6.1,2026-10-07T04:42:16.163784
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",18,14,18,28.4,47.3,1,2026-10-07T04:42:17.166536
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",39,39,35,26.8,63.9,3,2026-10-07T04:42:17.666511
+hanoi,"Hanoi, Vietnam (Hà Nội)",9,9,6,29.5,39.5,1.8,2026-10-07T11:34:00.575857
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",5,5,3,24,94,0.5,2026-10-07T11:34:01.041608
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",17,17,12,25,94,3.8,2026-10-07T11:34:01.501425
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",48,31,48,29.4,42.7,1,2026-10-07T11:34:02.654755
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",49,49,43,26.8,63.9,3,2026-10-07T11:34:03.557683
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",95,38,95,29.5,39.5,1.8,2026-10-07T11:34:04.415135
+hanoi,"Hanoi, Vietnam (Hà Nội)",9,9,6,24,78,1.5,2026-10-07T18:32:33.503076
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",5,5,3,24,94,0.5,2026-10-07T18:32:34.139686
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",18,18,12,25,94,4.6,2026-10-07T18:32:34.800577
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",42,42,38,29.4,42.7,1,2026-10-07T18:32:35.688179
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",32,32,28,26.8,63.9,3,2026-10-07T18:32:36.114641
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",168,168,57,24,78,1.5,2026-10-07T18:32:36.529083
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",170,170,,23,82,1,2026-10-07T23:28:07.761407
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",11,11,7,24,94,2.3,2026-10-07T23:28:08.285082
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",17,17,12,24,94,4.6,2026-10-07T23:28:08.810752
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",31,28,31,23.1,75.8,3,2026-10-07T23:28:09.862231
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",38,38,31,23.4,86.9,2,2026-10-07T23:28:10.383642
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",167,167,52,21,82,1,2026-10-07T23:28:10.907654
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",151,151,,29,63,1.5,2026-10-08T04:52:49.474884
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",12,12,8,25,91,1,2026-10-08T04:52:49.922400
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",17,17,11,24,94,4.3,2026-10-08T04:52:50.377144
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",30,19,30,22.4,79.6,3,2026-10-08T04:52:51.279254
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",44,44,36,24.6,77,3,2026-10-08T04:52:51.730326
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",164,164,52,28.5,57.5,2,2026-10-08T04:52:52.177087
+hanoi,"Hanoi, Vietnam (Hà Nội)",9,9,6,30,43.5,1.2,2026-10-08T11:48:50.597929
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",35,35,23,24,94,0.7,2026-10-08T11:48:51.162206
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",22,22,15,25.5,97,2,2026-10-08T11:48:51.710870
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",58,44,58,29.6,51,3,2026-10-08T11:48:52.808674
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",54,54,37,25.4,82,3,2026-10-08T11:48:53.369604
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",109,109,40,30,43.5,1.2,2026-10-08T11:48:53.915610
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",148,148,,27,77,1,2026-10-08T18:31:28.502561
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",18,18,12,24,94,1.2,2026-10-08T18:31:28.966724
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",23,23,15,26,94,1.8,2026-10-08T18:31:29.450575
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",54,54,46,26.2,74.9,2,2026-10-08T18:31:30.366201
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",46,46,37,24,89.7,3,2026-10-08T18:31:30.821377
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",188,188,63,25,75.5,0.7,2026-10-08T18:31:31.279235
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",182,182,,24.5,85.5,1.5,2026-10-08T23:39:28.993590
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",8,8,5,24,94,0.2,2026-10-08T23:39:29.444031
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",12,12,8,25,100,2.5,2026-10-08T23:39:29.897049
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",39,39,38,23.6,79.3,4,2026-10-08T23:39:30.803318
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",56,56,39,24,89.7,3,2026-10-08T23:39:31.254820
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",162,162,63,22.5,85.5,1,2026-10-08T23:39:31.705909
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",175,175,,29.5,68.5,2.5,2026-10-09T04:55:58.662578
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",21,21,14,28,76,0.7,2026-10-09T04:55:59.228934
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",7,7,5,26,94,4.8,2026-10-09T04:55:59.755109
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",23,22,23,23.4,82.8,3,2026-10-09T04:56:00.800924
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",22,22,15,24,89.7,3,2026-10-09T04:56:01.323137
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",160,160,47,29.5,62,2,2026-10-09T04:56:01.849929
+hanoi,"Hanoi, Vietnam (Hà Nội)",13,13,6,31,48,1.5,2026-10-09T11:42:38.951547
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",20,20,13,27,83,3.3,2026-10-09T11:42:39.368593
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",8,8,6,27,88,1.8,2026-10-09T11:42:39.786368
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",43,39,43,29.4,58.8,2,2026-10-09T11:42:40.631837
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",14,13,14,23.4,96.4,3,2026-10-09T11:42:41.056486
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",78,78,37,30,55,3,2026-10-09T11:42:41.539798
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",146,146,,28,78,2,2026-10-09T18:02:45.063777
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",30,30,20,25,94,0.5,2026-10-09T18:02:45.663715
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",26,26,18,26,100,0.7,2026-10-09T18:02:46.224281
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",89,81,89,23.6,85.9,3,2026-10-09T18:02:47.337530
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",11,9,11,25.3,94.8,3,2026-10-09T18:02:47.893314
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",178,178,54,26,83,2,2026-10-09T18:02:48.448579
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",146,146,,27,82,1,2026-10-09T23:03:30.771970
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",32,32,22,25,94,1,2026-10-09T23:03:31.353420
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",9,9,6,26,94,2.3,2026-10-09T23:03:31.910542
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",81,81,60,24,91.3,4,2026-10-09T23:03:33.033113
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",6,5,6,24.3,97,1,2026-10-09T23:03:33.590858
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",169,169,68,25,88,1.5,2026-10-09T23:03:34.146094
+hanoi,"United Nations International School of Hanoi, Vietnam (Trường Quốc tế Liên Hợp Quốc Hà Nội)",197,197,,28,87,2,2026-10-10T04:41:26.253619
+da-nang,"Da Nang, Vietnam (TP Đà Nẵng)",25,25,17,25,94,1.5,2026-10-10T04:41:26.726906
+hue,"Thừa Thiên Huế/83 Hùng Vương, Vietnam",8,8,5,27,94,2,2026-10-10T04:41:27.183478
+quang-ninh,"Quảng Ninh/K11 - Minh Thành, Vietnam",70,70,56,25.1,93.1,2,2026-10-10T04:41:28.126209
+ha-tinh,"Hà Tĩnh/Trạm Kỳ Phương, Vietnam",6,6,5,26.2,94.2,1,2026-10-10T04:41:28.576480
+viet-tri,"Viet Tri, Vietnam (Tp Việt Trì)",169,169,51,28,78,2,2026-10-10T04:41:29.030081
