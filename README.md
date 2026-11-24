@@ -37,6 +37,11 @@ Tạo `backend/.env` nếu cần bật báo cáo AI:
 
 ```dotenv
 GEMINI_API_KEY=your_gemini_api_key
+
+# Tùy chọn: nhận phản hồi người dùng qua Gmail SMTP (không lộ email trên frontend)
+SMTP_USER=your_gmail@gmail.com
+SMTP_PASS=your_gmail_app_password
+FEEDBACK_TO_EMAIL=your_gmail@gmail.com
 ```
 
 Để tải dữ liệu mới từ WAQI, tạo `scripts/.env`:

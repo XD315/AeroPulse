@@ -16,24 +16,24 @@
   --font-heading: var(--font-sans);
   --font-body:    var(--font-sans);
 
-  /* Color tokens – Light mode */
-  --color-bg:           #dbeef0;
-  --color-bg-gradient:  linear-gradient(160deg, #cce7f0 0%, #ddf0f3 60%, #c9e8ed 100%);
-  --color-surface:      rgba(255, 255, 255, 0.72);
-  --color-surface-2:    rgba(255, 255, 255, 0.55);
-  --color-border:       rgba(14, 106, 159, 0.18);
-  --color-text:         #172f52;
-  --color-text-muted:   #4b6577;
-  --color-accent:       #0977c8;
-  --color-accent-glow:  rgba(9, 119, 200, 0.25);
+  /* Color tokens – Light mode (Airy Cobalt & Cloud White) */
+  --color-bg:           #f5f8fc;
+  --color-bg-gradient:  linear-gradient(180deg, #f7f9fc 0%, #eff4fb 100%);
+  --color-surface:      #ffffff;
+  --color-surface-2:    #f1f5fa;
+  --color-border:       rgba(226, 232, 240, 0.9);
+  --color-text:         #1e293b;
+  --color-text-muted:   #64748b;
+  --color-accent:       #3b66f5;
+  --color-accent-glow:  rgba(59, 102, 245, 0.16);
   --color-warning:      #fffbeb;
   --color-warning-border: #fbbf24;
   --color-warning-text: #78350f;
 
-  /* Glassmorphism */
-  --glass-blur:    16px;
-  --glass-border:  1px solid rgba(255, 255, 255, 0.35);
-  --glass-shadow:  0 8px 32px rgba(29, 78, 96, 0.12);
+  /* Soft elevation (no heavy boxed borders) */
+  --glass-blur:    12px;
+  --glass-border:  1px solid rgba(226, 232, 240, 0.75);
+  --glass-shadow:  0 4px 20px rgba(15, 23, 42, 0.045);
 
   /* Radius */
   --radius-sm: 8px;

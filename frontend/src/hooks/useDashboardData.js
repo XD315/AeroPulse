@@ -3,8 +3,7 @@
  * Tự động re-fetch khi location / startDate / endDate / metric thay đổi.
  */
 import { useState, useEffect, useCallback } from 'react';
-
-const API_BASE = 'http://localhost:5000';
+import { API_BASE } from '../config';
 
 // Màu cố định cho từng location slug
 export const LOCATION_COLORS = {

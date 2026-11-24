@@ -1,9 +1,15 @@
 import requests
 import csv
 import os
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 from dotenv import load_dotenv
 from math import radians, sin, cos, sqrt, atan2
+
+try:
+    from zoneinfo import ZoneInfo
+    VN_TZ = ZoneInfo("Asia/Ho_Chi_Minh")
+except Exception:
+    VN_TZ = timezone(timedelta(hours=7))
 
 load_dotenv()
 TOKEN = os.getenv("WAQI_TOKEN")
@@ -39,8 +45,13 @@ def distance_km(lat1, lng1, lat2, lng2):
 
 def fetch_aqi_by_location(name, lat, lng, max_distance_km=30):
     url = f"https://api.waqi.info/feed/geo:{lat};{lng}/?token={TOKEN}"
-    response = requests.get(url)
-    data = response.json()
+    try:
+        response = requests.get(url, timeout=15)
+        response.raise_for_status()
+        data = response.json()
+    except Exception as e:
+        print(f"Lỗi kết nối/parse với {name}: {e}")
+        return None
 
     if data.get("status") != "ok":
         print(f"Lỗi với {name}: {data}")
@@ -64,7 +75,7 @@ def fetch_aqi_by_location(name, lat, lng, max_distance_km=30):
         "temperature": iaqi.get("t", {}).get("v", ""),
         "humidity": iaqi.get("h", {}).get("v", ""),
         "wind": iaqi.get("w", {}).get("v", ""),
-        "timestamp": datetime.now().isoformat()
+        "timestamp": datetime.now(VN_TZ).isoformat()
     }
 
 
@@ -92,5 +103,6 @@ if __name__ == "__main__":
             results.append(result)
             print(result)
 
-    save_to_csv(results)
+    if results:
+        save_to_csv(results)
     print(f"Đã lưu {len(results)} dòng.")

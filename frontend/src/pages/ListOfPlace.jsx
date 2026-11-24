@@ -2,8 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import ReactMarkdown from 'react-markdown';
 import './ListOfPlace.css';
 import { useLanguage } from '../i18n/LanguageContext';
-
-const API_BASE = 'http://localhost:5000';
+import { API_BASE } from '../config';
 
 // ---- Màu sắc theo statusType ----
 const STATUS_COLORS = {
@@ -48,10 +47,15 @@ const IconRefresh = () => (
 );
 
 // ---- Xuất file ----
+function escapeCsvCell(val) {
+  const str = String(val ?? '');
+  return /[",\n\r]/.test(str) ? `"${str.replace(/"/g, '""')}"` : str;
+}
+
 function exportCSV(data) {
   const headers = ['STT', 'Địa điểm', 'Thời gian', 'AQI', 'Trạng thái'];
   const rows = data.map((d, i) => [i + 1, d.location, d.time, d.aqi, d.status]);
-  const csv = [headers, ...rows].map((r) => r.join(',')).join('\n');
+  const csv = [headers, ...rows].map((r) => r.map(escapeCsvCell).join(',')).join('\n');
   const blob = new Blob(['\uFEFF' + csv], { type: 'text/csv;charset=utf-8;' });
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');

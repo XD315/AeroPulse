@@ -1,6 +1,7 @@
 import { useEffect, useRef, lazy, Suspense, useState } from 'react'
 import './About.css'
 import { useLanguage } from '../i18n/LanguageContext'
+import { API_BASE } from '../config'
 
 const ParticleBackground = lazy(() => import('../components/ParticleBackground'))
 
@@ -83,11 +84,13 @@ const IconSend = () => (
 
 // ---- Contact Modal ----
 function ContactModal({ onClose }) {
-  const { t } = useLanguage()
-  const [name, setName]       = useState('')
-  const [message, setMessage] = useState('')
-  const [sent, setSent]       = useState(false)
-  const overlayRef            = useRef(null)
+  const { t, lang } = useLanguage()
+  const [name, setName]         = useState('')
+  const [message, setMessage]   = useState('')
+  const [sent, setSent]         = useState(false)
+  const [sending, setSending]   = useState(false)
+  const [sendError, setSendError] = useState(null)
+  const overlayRef              = useRef(null)
 
   // Đóng khi click ra ngoài
   const handleOverlayClick = (e) => {
@@ -101,16 +104,32 @@ function ContactModal({ onClose }) {
     return () => window.removeEventListener('keydown', handler)
   }, [onClose])
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    if (!name.trim() || !message.trim()) return
+    if (!name.trim() || !message.trim() || sending) return
 
-    const subject = encodeURIComponent(`[AeroPulse] Feedback from ${name}`)
-    const body    = encodeURIComponent(
-      `Name: ${name}\n\nMessage / Feedback:\n${message}\n\n---\nSent from AeroPulse`
-    )
-    window.location.href = `mailto:xuanduy3105@gmail.com?subject=${subject}&body=${body}`
-    setSent(true)
+    setSending(true)
+    setSendError(null)
+    try {
+      const res = await fetch(`${API_BASE}/api/feedback`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name: name.trim(), message: message.trim() }),
+      })
+      if (!res.ok) {
+        const errData = await res.json().catch(() => ({}))
+        throw new Error(errData.error || `HTTP ${res.status}`)
+      }
+      setSent(true)
+    } catch (err) {
+      setSendError(
+        lang === 'en'
+          ? `Could not send feedback: ${err.message}`
+          : `Không thể gửi phản hồi: ${err.message}`
+      )
+    } finally {
+      setSending(false)
+    }
   }
 
   return (
@@ -177,17 +196,23 @@ function ContactModal({ onClose }) {
               <span className="contact-char-count">{message.length}/2000</span>
             </div>
 
+            {sendError && (
+              <div className="contact-error" role="alert" style={{ color: '#dc2626', fontSize: '0.85rem', fontWeight: 500 }}>
+                {sendError}
+              </div>
+            )}
+
             <div className="contact-form-footer">
               <span className="contact-to-hint">
-                <IconMail /> {t('about.sendTo')} <strong>xuanduy3105@gmail.com</strong>
+                {t('about.sendTo')}
               </span>
               <button
                 type="submit"
                 className="contact-btn-primary"
-                disabled={!name.trim() || !message.trim()}
+                disabled={!name.trim() || !message.trim() || sending}
               >
                 <IconSend />
-                {t('about.submitBtn')}
+                {sending ? (lang === 'en' ? 'Sending...' : 'Đang gửi...') : t('about.submitBtn')}
               </button>
             </div>
           </form>

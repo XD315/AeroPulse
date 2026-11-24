@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback, useRef } from 'react';
 import WeatherMapModal from '../components/WeatherMapModal';
 import './WeatherPage.css';
 import { useLanguage } from '../i18n/LanguageContext';
+import { API_BASE } from '../config';
 
 // ── Cấu hình địa điểm ──────────────────────────────────────
 const MONITORED_CITIES = [
@@ -142,7 +143,7 @@ export default function WeatherPage() {
   const fetchBySlug = useCallback(async (slug) => {
     setLoading(true); setError(null); setWeather(null);
     try {
-      const res = await fetch(`http://localhost:5000/api/weather?location=${slug}`);
+      const res = await fetch(`${API_BASE}/api/weather?location=${slug}`);
       if (!res.ok) throw new Error((await res.json().catch(()=>({}))).error || `HTTP ${res.status}`);
       setWeather(await res.json());
     } catch(e) { setError(e.message); }
@@ -152,7 +153,7 @@ export default function WeatherPage() {
   const fetchByCoords = useCallback(async (lat, lon, label) => {
     setLoading(true); setError(null); setWeather(null);
     try {
-      const res = await fetch(`http://localhost:5000/api/weather?location=gps&lat=${lat}&lon=${lon}`);
+      const res = await fetch(`${API_BASE}/api/weather?location=gps&lat=${lat}&lon=${lon}`);
       if (!res.ok) throw new Error((await res.json().catch(()=>({}))).error || `HTTP ${res.status}`);
       const data = await res.json();
       setWeather({ ...data, label: label || data.label });
@@ -270,7 +271,11 @@ export default function WeatherPage() {
         {/* Thanh tìm kiếm & chọn 7 địa điểm tích hợp */}
         <div className="unified-search-wrap" ref={searchWrapRef}>
           <div className={`unified-search-bar ${isDropdownOpen ? 'bar-focused' : ''}`}>
-            <span className="usb-icon">🔍</span>
+            <span className="usb-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              </svg>
+            </span>
             <input
               type="text"
               className="usb-input"
@@ -282,7 +287,7 @@ export default function WeatherPage() {
               onFocus={() => setIsDropdownOpen(true)}
               placeholder={
                 displayLabel
-                  ? (isEn ? `📍 ${displayLabel} (Click to select cities or search...)` : `📍 ${displayLabel} (Nhấp để chọn 7 địa điểm hoặc gõ tìm kiếm...)`)
+                  ? (isEn ? `${displayLabel} — Select a city or type to search...` : `${displayLabel} — Chọn địa điểm hoặc gõ để tìm...`)
                   : t('weather.searchPlaceholder')
               }
               aria-label={t('weather.searchPlaceholder')}
@@ -321,7 +326,7 @@ export default function WeatherPage() {
               {/* Nhóm 1: 7 Địa điểm theo dõi */}
               <div className="dropdown-group">
                 <div className="dropdown-group-header">
-                  <span>📍 {isEn ? '7 MONITORED CITIES' : '7 ĐỊA ĐIỂM THEO DÕI'}</span>
+                  <span>{isEn ? '7 MONITORED CITIES' : '7 ĐỊA ĐIỂM THEO DÕI'}</span>
                   <span className="group-badge">{isEn ? 'Default' : 'Mặc định'}</span>
                 </div>
                 <div className="preset-chips-grid">
@@ -334,9 +339,8 @@ export default function WeatherPage() {
                         className={`preset-chip-btn ${isSelected ? 'active' : ''}`}
                         onClick={() => handleSelectPreset(item)}
                       >
-                        <span className="chip-pin">📍</span>
                         <span className="chip-name">{item}</span>
-                        {isSelected && <span className="chip-check"></span>}
+                        {isSelected && <span className="chip-check" />}
                       </button>
                     );
                   })}
@@ -350,8 +354,8 @@ export default function WeatherPage() {
               {searchText.trim().length >= 2 && (
                 <div className="dropdown-group dropdown-group--online">
                   <div className="dropdown-group-header">
-                    <span>🌐 {isEn ? 'EXTENDED SEARCH RESULTS' : 'KẾT QUẢ TÌM KIẾM MỞ RỘNG'}</span>
-                    {searching && <span className="searching-spinner">{isEn ? '⟳ Searching...' : '⟳ Đang tìm...'}</span>}
+                    <span>{isEn ? 'EXTENDED SEARCH RESULTS' : 'KẾT QUẢ TÌM KIẾM MỞ RỘNG'}</span>
+                    {searching && <span className="searching-spinner">{isEn ? 'Searching...' : 'Đang tìm...'}</span>}
                   </div>
                   {suggestions.length > 0 ? (
                     <div className="suggestions-list">
@@ -362,7 +366,6 @@ export default function WeatherPage() {
                           className="suggestion-row"
                           onClick={() => selectSuggestion(s)}
                         >
-                          <span className="sug-icon">🗺️</span>
                           <div className="sug-content">
                             <span className="sug-title">{s.title || s.label}</span>
                             {s.subtitle && <span className="sug-sub">{s.subtitle}</span>}
@@ -388,10 +391,12 @@ export default function WeatherPage() {
             disabled={gpsLoading || loading}
             aria-label={isEn ? 'Use current GPS location' : 'Dùng GPS vị trí hiện tại'}
           >
-            {gpsLoading ? <span className="btn-spinner">⟳</span> : '📍'}
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="3"/><path d="M12 2v3m0 14v3M2 12h3m14 0h3"/>
+            </svg>
           </button>
           <div className="custom-tooltip" role="tooltip">
-            <div className="tooltip-title">📍 {isEn ? 'Current Location (GPS)' : 'Vị trí hiện tại (GPS)'}</div>
+            <div className="tooltip-title">{isEn ? 'Current Location (GPS)' : 'Vị trí hiện tại (GPS)'}</div>
             <div className="tooltip-desc">
               {gpsLabel
                 ? (isEn ? `Viewing: ${gpsLabel}. Click to relocate.` : `Đang xem: ${gpsLabel}. Nhấp để định vị lại.`)
@@ -408,10 +413,12 @@ export default function WeatherPage() {
             onClick={() => setShowMapModal(true)}
             aria-label={isEn ? 'Open interactive map' : 'Mở bản đồ tương tác'}
           >
-            🗺️
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/>
+            </svg>
           </button>
           <div className="custom-tooltip" role="tooltip">
-            <div className="tooltip-title">🗺️ {isEn ? 'Interactive Map' : 'Bản đồ tương tác'}</div>
+            <div className="tooltip-title">{isEn ? 'Interactive Map' : 'Bản đồ tương tác'}</div>
             <div className="tooltip-desc">
               {isEn ? 'Open full-screen map, click any point to view weather.' : 'Mở bản đồ toàn màn hình, nhấp chọn bất kỳ điểm nào để xem thời tiết.'}
             </div>
@@ -427,10 +434,12 @@ export default function WeatherPage() {
             disabled={loading}
             aria-label={isEn ? 'Refresh weather data' : 'Làm mới dữ liệu thời tiết'}
           >
-            {loading ? <span className="btn-spinner">⟳</span> : '↺'}
+            <svg className={loading ? 'btn-spinner' : ''} width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
+            </svg>
           </button>
           <div className="custom-tooltip" role="tooltip">
-            <div className="tooltip-title">↺ {isEn ? 'Refresh Data' : 'Làm mới dữ liệu'}</div>
+            <div className="tooltip-title">{isEn ? 'Refresh Data' : 'Làm mới dữ liệu'}</div>
             <div className="tooltip-desc">{isEn ? 'Update latest weather from Open-Meteo.' : 'Cập nhật thời tiết mới nhất từ Open-Meteo.'}</div>
           </div>
         </div>
@@ -465,8 +474,8 @@ export default function WeatherPage() {
             aria-selected={activeTab === tab}
             className={`tab-button ${activeTab === tab ? 'active' : ''}`}
             onClick={() => setActiveTab(tab)}>
-            {tab === 'current' ? (isEn ? '🌡️ Current' : '🌡️ Hiện tại') :
-             tab === 'hourly'  ? (isEn ? '⏱️ Hourly' : '⏱️ Theo giờ') : (isEn ? '📅 14 Days' : '📅 14 ngày')}
+            {tab === 'current' ? (isEn ? 'Current' : 'Hiện tại') :
+             tab === 'hourly'  ? (isEn ? 'Hourly' : 'Theo giờ') : (isEn ? '14 Days' : '14 ngày')}
           </button>
         ))}
       </div>
@@ -480,7 +489,7 @@ export default function WeatherPage() {
         )}
         {!loading && error && (
           <div className="weather-error" role="alert">
-            <span>⚠️ {error}</span>
+            <span>{error}</span>
             <button type="button" onClick={handleRefresh} className="retry-btn">{isEn ? 'Retry' : 'Thử lại'}</button>
           </div>
         )}
@@ -503,7 +512,7 @@ export default function WeatherPage() {
                     <div className="temp-unit">
                       °C
                       {cur.feels_like != null && (
-                        <div style={{fontSize:'0.75rem',fontWeight:400,marginTop:4,color:'#5f7285'}}>
+                        <div className="feels-like-sub">
                           {isEn ? 'Feels like ' : 'Cảm giác '}{Math.round(cur.feels_like)}°
                         </div>
                       )}
@@ -511,17 +520,16 @@ export default function WeatherPage() {
                   </div>
                   <div className="metric-row">
                     {[
-                      { icon:'◔', label: isEn ? 'Humidity' : 'Độ ẩm',       val: cur.humidity != null ? `${cur.humidity}%` : '—' },
-                      { icon:'↗', label: `${isEn ? 'Wind' : 'Gió'} ${windDir(cur.wind_dir)}`, val: cur.wind_speed != null ? `${cur.wind_speed} km/h` : '—' },
-                      { icon:'◌', label: isEn ? 'Pressure' : 'Áp suất',      val: cur.pressure != null ? `${Math.round(cur.pressure)} hPa` : '—' },
-                      { icon:'✦', label: isEn ? 'UV Index' : 'Chỉ số UV',    val: uvLabel(cur.uv_index, lang) },
-                      { icon:'☁', label: isEn ? 'Cloud Cover' : 'Mây che phủ',  val: cur.cloud_cover != null ? `${cur.cloud_cover}%` : '—' },
-                      { icon:'🌧', label: isEn ? 'Precipitation' : 'Mưa',          val: cur.precipitation != null ? `${cur.precipitation} mm` : '—' },
+                      { label: isEn ? 'Humidity' : 'Độ ẩm',       val: cur.humidity != null ? `${cur.humidity}%` : '—' },
+                      { label: `${isEn ? 'Wind' : 'Gió'} ${windDir(cur.wind_dir)}`, val: cur.wind_speed != null ? `${cur.wind_speed} km/h` : '—' },
+                      { label: isEn ? 'Pressure' : 'Áp suất',      val: cur.pressure != null ? `${Math.round(cur.pressure)} hPa` : '—' },
+                      { label: isEn ? 'UV Index' : 'Chỉ số UV',    val: uvLabel(cur.uv_index, lang) },
+                      { label: isEn ? 'Cloud Cover' : 'Mây che phủ',  val: cur.cloud_cover != null ? `${cur.cloud_cover}%` : '—' },
+                      { label: isEn ? 'Precipitation' : 'Lượng mưa',    val: cur.precipitation != null ? `${cur.precipitation} mm` : '—' },
                     ].map(m => (
                       <div key={m.label} className="metric-box">
-                        <div className="metric-icon">{m.icon}</div>
                         <div className="metric-label">{m.label}</div>
-                        <div className="metric-value" style={{fontSize:'1.1rem'}}>{m.val}</div>
+                        <div className="metric-value">{m.val}</div>
                       </div>
                     ))}
                   </div>
@@ -529,22 +537,22 @@ export default function WeatherPage() {
 
                 {hourly.length > 0 && (
                   <section className="forecast-section">
-                    <h3 className="forecast-header">{isEn ? '📈 24h Temperature Chart' : '📈 Biểu đồ nhiệt độ 24h'}</h3>
+                    <h3 className="forecast-header">{isEn ? '24h Temperature Chart' : 'Biểu đồ nhiệt độ 24h'}</h3>
                     <TempChart hourly={hourly} />
                   </section>
                 )}
 
                 {hourly.length > 0 && (
                   <section className="forecast-section">
-                    <h3 className="forecast-header">{isEn ? '⏱️ Next 6 Hours' : '⏱️ 6 giờ tới'}</h3>
+                    <h3 className="forecast-header">{isEn ? 'Next 6 Hours' : '6 giờ tới'}</h3>
                     <div className="forecast-grid">
                       {hourly.slice(0,6).map((h,i) => (
                         <div key={i} className="forecast-card">
                           <div className="time">{h.time}</div>
                           <div className="icon">{h.icon}</div>
-                          <div className="temp">{h.temp != null ? `${Math.round(h.temp)}°C` : '—'}</div>
+                          <div className="temp">{h.temp != null ? `${Math.round(h.temp)}°` : '—'}</div>
                           <div className="meta">{h.wind != null ? `${h.wind} km/h` : ''}</div>
-                          {h.rain > 0 && <div className="meta" style={{color:'#4a9cc5'}}>🌧 {h.rain}mm</div>}
+                          {h.rain > 0 && <div className="meta meta-rain">{h.rain} mm</div>}
                         </div>
                       ))}
                     </div>
@@ -556,7 +564,7 @@ export default function WeatherPage() {
             {/* ══ Theo giờ ════════════════════════ */}
             {activeTab === 'hourly' && (
               <section className="forecast-section">
-                <h3 className="forecast-header">{isEn ? `⏱️ 24h Details — ${displayLabel}` : `⏱️ Chi tiết 24h — ${displayLabel}`}</h3>
+                <h3 className="forecast-header">{isEn ? `24h Details — ${displayLabel}` : `Chi tiết 24h — ${displayLabel}`}</h3>
                 <TempChart hourly={hourly} />
                 <div className="hourly-table-wrap">
                   <table className="hourly-table">
@@ -604,7 +612,7 @@ export default function WeatherPage() {
             {/* ══ 14 ngày ═════════════════════════ */}
             {activeTab === 'forecast' && (
               <section className="forecast-section">
-                <h3 className="forecast-header">{isEn ? `📅 14-Day Forecast — ${displayLabel}` : `📅 Dự báo 14 ngày — ${displayLabel}`}</h3>
+                <h3 className="forecast-header">{isEn ? `14-Day Forecast — ${displayLabel}` : `Dự báo 14 ngày — ${displayLabel}`}</h3>
                 <div className="daily-forecast">
                   {daily.map(day => {
                     const isOpen = selectedDay === day.date;
@@ -627,7 +635,7 @@ export default function WeatherPage() {
                             <div className="temp-fill" style={{width:`${Math.max(10,Math.min(fill,95))}%`}}/>
                           </div>
                           <div className="day-row-right">
-                            {day.pop != null && <span className="pop-badge">💧{day.pop}%</span>}
+                            {day.pop != null && <span className="pop-badge">{day.pop}%</span>}
                             <div className="temp-text">{day.temp_label}</div>
                             <svg className={`chevron-icon ${isOpen?'chevron-icon--open':''}`}
                               width="14" height="14" viewBox="0 0 24 24"

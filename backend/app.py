@@ -1,12 +1,15 @@
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 import pandas as pd
+import json
 import math
 from sklearn.ensemble import IsolationForest
 from google import genai
 from dotenv import load_dotenv
 import os
+import smtplib
 import time
+from email.message import EmailMessage
 import requests as http_requests
 from datetime import datetime, timedelta
 
@@ -15,18 +18,29 @@ load_dotenv(os.path.join(os.path.dirname(__file__), '.env'))
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app)
+cors_origins = os.getenv("CORS_ORIGINS", "*")
+CORS(app, resources={r"/api/*": {"origins": cors_origins.split(",") if cors_origins != "*" else "*"}})
 
 gemini_api_key = os.getenv("GEMINI_API_KEY")
 gemini_client = genai.Client(api_key=gemini_api_key) if gemini_api_key else None
 
 # ---- Cache trong RAM (15 phút để đảm bảo dữ liệu luôn mới) ----
 _cache = {"data": None, "timestamp": None}
+_data_cache = {"df": None, "timestamp": None}
+_report_cache = {}
+DATA_CACHE_MINUTES = 15
+
 
 def is_cache_valid():
     if _cache["data"] is None or _cache["timestamp"] is None:
         return False
-    return datetime.now() - _cache["timestamp"] < timedelta(minutes=15)
+    return datetime.now() - _cache["timestamp"] < timedelta(minutes=DATA_CACHE_MINUTES)
+
+
+def is_data_cache_valid():
+    if _data_cache["df"] is None or _data_cache["timestamp"] is None:
+        return False
+    return datetime.now() - _data_cache["timestamp"] < timedelta(minutes=DATA_CACHE_MINUTES)
 
 
 def generate_ai_report(row):
@@ -67,7 +81,11 @@ Dựa trên đặc điểm địa lý, nguồn phát thải và điều kiện k
 3. Thêm 1 khuyến nghị sức khỏe phù hợp với người dân địa phương.
 Viết súc tích, mỗi nguyên nhân 2-3 câu."""
 
-    # Ưu tiên các model có quota cao
+    # Ưu tiên các model có quota cao; cache theo (location_slug, timestamp)
+    cache_key = (location_slug, str(row.get('timestamp', '')))
+    if cache_key in _report_cache:
+        return _report_cache[cache_key]
+
     models_to_try = ["gemini-flash-lite-latest", "gemini-2.5-flash-lite", "gemini-flash-latest"]
     if gemini_client:
         for model_name in models_to_try:
@@ -77,6 +95,7 @@ Viết súc tích, mỗi nguyên nhân 2-3 câu."""
                     contents=prompt
                 )
                 if response and response.text:
+                    _report_cache[cache_key] = response.text
                     return response.text
             except Exception as e:
                 print(f"[AI] Model {model_name} không khả dụng: {e}")
@@ -178,12 +197,15 @@ Viết súc tích, mỗi nguyên nhân 2-3 câu."""
     )
 
 
-def load_clean_data():
+def load_clean_data(force_refresh=False):
     """
     Tải dữ liệu từ GitHub tự động của AeroPulse (ưu tiên GitHub để lấy bản cập nhật mới nhất từ GitHub Actions bot).
-    Thêm tham số timestamp chống cache CDN của GitHub raw.
+    Cache DataFrame trong RAM 15 phút để tránh tải lại CSV trên mỗi request.
     Nếu mất mạng hoặc GitHub lỗi, fallback đọc file cục bộ.
     """
+    if not force_refresh and is_data_cache_valid():
+        return _data_cache["df"].copy()
+
     df = None
     try:
         url = f"https://raw.githubusercontent.com/XD315/AeroPulse/main/data/api_data.csv?t={int(time.time())}"
@@ -210,9 +232,17 @@ def load_clean_data():
     df['temperature'] = pd.to_numeric(df['temperature'], errors='coerce').fillna(28.0)
     df['humidity']    = pd.to_numeric(df['humidity'], errors='coerce').fillna(75.0)
     df['wind']        = pd.to_numeric(df['wind'], errors='coerce').fillna(2.0)
-    df['pm25'] = df['pm25'].fillna(df['pm25'].median())
-    df['pm10'] = df['pm10'].fillna(df['pm10'].median())
-    return df
+
+    # Điền giá trị thiếu theo từng địa điểm trước, fallback về median toàn cục nếu cả nhóm đều NaN
+    for col in ('pm25', 'pm10'):
+        global_median = df[col].median()
+        df[col] = df.groupby('location')[col].transform(
+            lambda s: s.fillna(s.median() if pd.notna(s.median()) else global_median)
+        )
+
+    _data_cache["df"] = df
+    _data_cache["timestamp"] = datetime.now()
+    return df.copy()
 
 # Nhãn tiếng Việt cho từng location slug
 LOCATION_LABELS = {
@@ -260,18 +290,24 @@ def get_anomalies():
         return jsonify(_cache["data"])
 
     print("[cache] Computing fresh anomalies (sorting by latest timestamp)...")
-    df = load_clean_data()
+    df = load_clean_data(force_refresh=force_refresh)
 
     # Sắp xếp theo thời gian MỚI NHẤT lên đầu để không lấy dữ liệu cũ từ tháng 8
     df['timestamp_dt'] = pd.to_datetime(df['timestamp'], errors='coerce')
     df = df.sort_values('timestamp_dt', ascending=False)
 
-    # DATA SCIENCE: Dùng IsolationForest để phát hiện bất thường
+    # DATA SCIENCE: Dùng IsolationForest theo từng địa điểm để phát hiện bất thường cục bộ
     # contamination=0.03: chỉ đánh dấu 3% data là bất thường (giảm false positive so với 0.05)
     df['location_mean'] = df.groupby('location')['aqi'].transform('mean')
-    features = df[['aqi', 'pm25', 'temperature', 'humidity', 'wind']]
-    model = IsolationForest(contamination=0.03, random_state=42)
-    df['is_anomaly'] = model.fit_predict(features)
+    feature_cols = ['aqi', 'pm25', 'temperature', 'humidity', 'wind']
+    df['is_anomaly'] = 1
+
+    for loc_slug, group in df.groupby('location'):
+        if len(group) < 10:
+            continue
+        model = IsolationForest(contamination=0.03, random_state=42)
+        preds = model.fit_predict(group[feature_cols])
+        df.loc[group.index, 'is_anomaly'] = preds
 
     # Lấy bản ghi bất thường MỚI NHẤT cho mỗi địa điểm (head(1) sau khi đã sắp xếp giảm dần)
     # Thêm filter AQI > 100: theo ngưỡng WHO, AQI ≤ 100 là chấp nhận được → không cần cảnh báo
@@ -398,7 +434,12 @@ def get_chart_data():
     # else: giữ tất cả
 
     if df.empty:
-        return jsonify([])
+        return jsonify({
+            'metric': metric,
+            'locations': [],
+            'location_labels': LOCATION_LABELS,
+            'rows': [],
+        })
 
     # Group theo date + location, lấy mean
     grouped = (
@@ -436,10 +477,17 @@ def get_chart_data():
 
 @app.route('/api/locations')
 def get_locations():
-    """Trả danh sách locations có trong data."""
+    """Trả danh sách locations có trong data kèm tọa độ."""
     df = load_clean_data()
     slugs = sorted(df['location'].unique().tolist())
-    result = [{'value': s, 'label': LOCATION_LABELS.get(s, s)} for s in slugs]
+    result = []
+    for s in slugs:
+        coords = LOCATION_COORDS.get(s, {})
+        item = {'value': s, 'label': LOCATION_LABELS.get(s, s)}
+        if 'lat' in coords and 'lon' in coords:
+            item['lat'] = coords['lat']
+            item['lon'] = coords['lon']
+        result.append(item)
     return jsonify(result)
 
 
@@ -688,7 +736,7 @@ def get_weather():
             'condition':  desc_d,
             'temp_max':   t_max,
             'temp_min':   t_min,
-            'temp_label': f"{round(t_max) if t_max else '?'}°/{round(t_min) if t_min else '?'}°",
+            'temp_label': f"{round(t_max) if t_max is not None else '?'}°/{round(t_min) if t_min is not None else '?'}°",
             'rain':       rain_d[i] if i < len(rain_d) else None,
             'pop':        pop_d[i]  if i < len(pop_d)  else None,   # xác suất mưa %
             'wind':       wind_d[i] if i < len(wind_d) else None,
@@ -712,9 +760,8 @@ def get_weather():
     if cur_code in DANGER_CODES:
         alerts.append({'type': 'danger', 'message': DANGER_CODES[cur_code], 'time': 'Hiện tại'})
     # Kiểm tra hourly 6h tới
-    for item in hourly[:6]:
-        code_h = next((codes_h[start_i + hourly.index(item)] for _ in [1] if True), 0)
-        wmo = codes_h[start_i + hourly.index(item)] if (start_i + hourly.index(item)) < len(codes_h) else 0
+    for idx, item in enumerate(hourly[:6]):
+        wmo = codes_h[start_i + idx] if (start_i + idx) < len(codes_h) else 0
         if wmo in DANGER_CODES and wmo != cur_code:
             alerts.append({'type': 'warning', 'message': DANGER_CODES[wmo], 'time': item['time']})
             break
@@ -738,5 +785,79 @@ def get_weather():
     return jsonify(result)
 
 
+def send_feedback_email(name, message, created_at):
+    """Gửi email phản hồi ngầm qua SMTP nếu đã cấu hình SMTP_USER và SMTP_PASS."""
+    smtp_user = os.getenv('SMTP_USER', '').strip()
+    smtp_pass = os.getenv('SMTP_PASS', '').strip()
+    if not smtp_user or not smtp_pass:
+        return
+
+    smtp_host = os.getenv('SMTP_HOST', 'smtp.gmail.com').strip()
+    smtp_port = int(os.getenv('SMTP_PORT', '587'))
+    to_email = os.getenv('FEEDBACK_TO_EMAIL', smtp_user).strip()
+
+    msg = EmailMessage()
+    msg['Subject'] = f'[AeroPulse] Phản hồi mới từ {name}'
+    msg['From'] = smtp_user
+    msg['To'] = to_email
+    msg.set_content(
+        f"Người gửi: {name}\n"
+        f"Thời gian: {created_at}\n\n"
+        f"Nội dung phản hồi:\n{message}\n"
+    )
+
+    try:
+        if smtp_port == 465:
+            with smtplib.SMTP_SSL(smtp_host, smtp_port, timeout=10) as server:
+                server.login(smtp_user, smtp_pass)
+                server.send_message(msg)
+        else:
+            with smtplib.SMTP(smtp_host, smtp_port, timeout=10) as server:
+                server.starttls()
+                server.login(smtp_user, smtp_pass)
+                server.send_message(msg)
+    except Exception as e:
+        print(f"[feedback] SMTP error: {e}")
+
+
+@app.route('/api/feedback', methods=['POST'])
+def submit_feedback():
+    """Nhận phản hồi từ người dùng qua API (không lộ email quản trị trên frontend)."""
+    payload = request.get_json(silent=True) or {}
+    name = str(payload.get('name', '')).strip()[:80]
+    message = str(payload.get('message', '')).strip()[:2000]
+
+    if not name or not message:
+        return jsonify({'error': 'Vui lòng nhập tên và nội dung phản hồi'}), 400
+
+    entry = {
+        'name': name,
+        'message': message,
+        'created_at': datetime.now().isoformat(),
+    }
+
+    feedback_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'feedback.jsonl')
+    os.makedirs(os.path.dirname(feedback_path), exist_ok=True)
+    with open(feedback_path, 'a', encoding='utf-8') as f:
+        f.write(json.dumps(entry, ensure_ascii=False) + '\n')
+
+    send_feedback_email(name, message, entry['created_at'])
+
+    webhook_url = os.getenv('FEEDBACK_WEBHOOK_URL', '').strip()
+    if webhook_url:
+        try:
+            http_requests.post(
+                webhook_url,
+                json={'content': f"**[AeroPulse Feedback]** `{name}`:\n{message}"},
+                timeout=5,
+            )
+        except Exception as e:
+            print(f"[feedback] Webhook error: {e}")
+
+    return jsonify({'ok': True}), 201
+
+
 if __name__ == '__main__':
-    app.run(debug=True, port=5000, threaded=True)
+    debug_mode = os.getenv('FLASK_DEBUG', 'false').lower() == 'true'
+    port = int(os.getenv('PORT', 5000))
+    app.run(debug=debug_mode, port=port, threaded=True)
