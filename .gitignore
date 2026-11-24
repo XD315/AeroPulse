@@ -59,6 +59,7 @@ yarn-error.log*
 # Bỏ comment (dấu #) dòng dưới đây nếu file historical_aqi.csv lớn hơn 50MB
 # data/historical_aqi.csv 
 data/feedback.jsonl
+DECISION.md
 
 # ==========================================
 # 6. HỆ ĐIỀU HÀNH & IDE (Trình soạn thảo)
